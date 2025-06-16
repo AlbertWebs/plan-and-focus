@@ -543,7 +543,7 @@ body {
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #333333;
   font-weight: 400;
 }
@@ -1045,7 +1045,7 @@ Animation Css
 }
 
 .secondary-color {
-  color: #FF5EE1;
+  color: #009EE2;
 }
 
 .font-reenie {
@@ -1153,7 +1153,7 @@ Animation Css
 }
 
 .primary-font {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .heading-font {
@@ -10236,7 +10236,7 @@ Padding Top Bottom
 
 /* Font specialized */
 .body-font {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .heading-font {
@@ -10988,7 +10988,7 @@ button.bk-btn {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0em;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 a.bk-btn.theme-btn,
 button.bk-btn.theme-btn {
@@ -11018,7 +11018,7 @@ button.brook-btn {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
   font-weight: 600;
   letter-spacing: 0em;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -11311,7 +11311,7 @@ a.moredetails-btn.yellow-color-2:hover {
   margin-left: 14px;
   color: #FCB72B;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .view-more-btn a span.btn-arrow::before {
   content: "";
@@ -11623,7 +11623,7 @@ a.moredetails-btn.yellow-color-2:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.43;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   margin-bottom: 39px;
 }
 @media only screen and (max-width: 767px) {
@@ -11995,7 +11995,7 @@ Creative Agency Section Title
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   white-space: nowrap;
   line-height: 1.2;
 }
@@ -12118,7 +12118,7 @@ Creative Agency Section Title
   line-height: 1.38;
   margin-bottom: 18px;
   color: #222222;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
 }
 .service.service--1 .content p {
@@ -12216,7 +12216,7 @@ Creative Agency Section Title
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.23;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .service.service--3 .content h3 a {
   color: #222222;
@@ -12607,7 +12607,7 @@ Counterup Area
   line-height: 1.43;
   margin-bottom: 0;
   word-wrap: break-word;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .number-speaks .content h2 {
   font-size: 48px;
@@ -12653,7 +12653,7 @@ Counterup Area
   line-height: 1.39;
   margin-bottom: 0;
   color: #222222;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
 }
 .number-wrap .content p {
@@ -12731,7 +12731,7 @@ Counterup Area
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.43;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .team-heading .heading-right button {
   padding: 0;
@@ -12740,7 +12740,7 @@ Counterup Area
   font-weight: 600;
   font-size: 14px;
   color: #222;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .team-heading .heading-right button i {
   padding-left: 10px;
@@ -12918,7 +12918,7 @@ Counterup Area
   margin-bottom: 4px;
   color: #222222;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .team.team_style--1 .info span {
   letter-spacing: 0em;
@@ -13041,7 +13041,7 @@ Counterup Area
   line-height: 1.388;
   margin-bottom: 6px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .team.team__style--2 .thumb .team-info .info span {
   color: hsla(0deg, 0%, 100%, 0.5);
@@ -13125,7 +13125,7 @@ Counterup Area
   font-size: 18px;
   line-height: 1.388;
   margin-bottom: 6px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .team.team__style--3 .team-info .info span {
   font-weight: 500;
@@ -13185,7 +13185,7 @@ Counterup Area
   line-height: 1.4;
   margin-bottom: 2px;
   color: #222222;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .team.team_style--4 .inner .content-body .position {
   font-size: 14px;
@@ -13598,7 +13598,7 @@ Blog Default Style
   line-height: 1.56;
   margin-bottom: 0;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   margin: 0 0 18px;
 }
 .blog .blog-content .content h3.the-title a {
@@ -13754,7 +13754,7 @@ Blog Default Style
   line-height: 1.375;
   margin-bottom: 0;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   margin: 0 0 18px;
 }
 .blog-style--1 .blog-content .content h3.the-title a {
@@ -13765,7 +13765,7 @@ Blog Default Style
   line-height: 1.12;
   margin-bottom: 0;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .blog-style--1 .blog-content .content h6.post-quote-by a {
   color: #fff;
@@ -14041,7 +14041,7 @@ Contact Form Style 01
   cursor: pointer;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
   border-color: #009EE2;
   background-color: #009EE2;
@@ -14077,7 +14077,7 @@ Contact Form Style 01
   background-color: #009EE2;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   border-radius: 6px;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -14400,7 +14400,7 @@ Contact Form Style 01
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   white-space: nowrap;
   line-height: 1.2;
 }
@@ -14569,7 +14569,7 @@ Contact Form Style 01
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   font-size: 14px;
 }
@@ -15354,7 +15354,7 @@ Contact Form Style 01
   z-index: 1000001;
 }
 .social-icon.tooltip-layout li a[class*=hint--][aria-label]:after {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   line-height: 1.23;
   content: attr(aria-label);
@@ -15586,7 +15586,7 @@ a[class*=hint--]:before {
   z-index: 1000001;
 }
 a[class*=hint--][aria-label]:after {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   line-height: 1.23;
   content: attr(aria-label);
@@ -16497,14 +16497,14 @@ a:hover.hint--bottom::after {
   font-size: 18px;
   margin-bottom: 14px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.23;
 }
 .carousle-slider .content p {
   line-height: 1.58;
   font-size: 14px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #333333;
   margin: 0;
 }
@@ -16636,7 +16636,7 @@ Countdown Area
   bottom: -31px;
   font-size: 14px !important;
   color: #999;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .time_circles > div > span {
@@ -17047,7 +17047,7 @@ Progress Charts
   border-radius: 50%;
   text-align: center;
   z-index: 3;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .bk-gradation .item-grid .content {
   position: relative;
@@ -17260,7 +17260,7 @@ Pricing PLans
 .ht-pricing-list-view thead tr th.pricing-header .heading-h4 {
   font-size: 24px;
   color: #222222;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.23;
@@ -17269,7 +17269,7 @@ Pricing PLans
 .ht-pricing-list-view thead tr th.pricing-header .heading-h6 {
   font-size: 14px;
   color: #222222;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.23;
@@ -18134,14 +18134,14 @@ Testimonial Area
   margin-bottom: 6px;
   color: #222222;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .testimonial_style--1 .content .testimonial-info .clint-info span {
   color: #333333;
   font-weight: 500;
   line-height: 1.58;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .testimonial_style--1 .content .testimonial-quote {
   padding: 2px 5px 0 0;
@@ -18337,14 +18337,14 @@ Testimonial Area
   font-size: 18px;
   line-height: 1.388;
   margin-bottom: 4px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .testimonial_style--2 .content .testimonial-info .clint-info span {
   font-weight: 500;
   letter-spacing: 0em;
   line-height: 1.58;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .testimonial_style--2 .content .testimonial-info .testimonial-quote {
   position: absolute;
@@ -18461,7 +18461,7 @@ Testimonial Area
   font-weight: 700;
   display: inline-block;
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .testimonial-nav-content .testimonial-nav .content .testimonial-info .clint-info span {
   font-size: 15px;
@@ -18488,7 +18488,7 @@ Testimonial Area
   font-weight: 700;
   display: inline-block;
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .testimonial-nav-content.testimonial-content--2 .testimonial-nav .content .testimonial-info .clint-info span {
   font-size: 15px;
@@ -18558,7 +18558,7 @@ Testimonial Area
   font-size: 18px;
   line-height: 1.388;
   margin-bottom: 4px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
 }
 .testimonanial-style--3 .testimonial-info .clint-info span {
@@ -18566,7 +18566,7 @@ Testimonial Area
   letter-spacing: 0em;
   line-height: 1.58;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
 }
 
@@ -18619,14 +18619,14 @@ Testimonial Area
   margin-bottom: 6px;
   color: #fff;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .testimonial_style--4 .content .testimonial-info .clint-info span {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
   line-height: 1.58;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .testimonial_style--5 .content {
@@ -18660,14 +18660,14 @@ Testimonial Area
   margin-bottom: 6px;
   color: #fff;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .testimonial_style--5 .content .testimonial-info .clint-info span {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
   line-height: 1.58;
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
@@ -19368,7 +19368,7 @@ Breadcaump Area
   font-weight: 600;
   line-height: 1.41;
   font-size: 32px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .breadcaump-area.breadcaump-title-bar .breadcaump-inner .heading.heading-h1 {
   font-weight: 600;
@@ -19408,7 +19408,7 @@ Breadcaump Area
   z-index: 1;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .breadcaump-area.breadcaump-title-bar .breadcaump-inner .breadcrumb-insite ul.core-breadcaump li a::after {
   content: "";
@@ -19825,7 +19825,7 @@ Breadcaump Area
   color: #ffffff;
   border-color: #009EE2;
   background-color: #009EE2;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   height: 55px;
   line-height: 53px;
   outline: none;
@@ -20011,7 +20011,7 @@ Start Dropdown Menu
   border: 0 solid transparent;
   border-bottom: 1px solid #444;
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .mega__width--fullscreen .mega__list li a span {
   position: relative;
@@ -20158,7 +20158,7 @@ Typography Area
 
 .heading {
   color: #222222;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.23;
@@ -20580,7 +20580,7 @@ p.bk_pra {
   font-weight: 500;
   line-height: 1.58;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   p.bk_pra br {
@@ -20742,7 +20742,7 @@ p.bk_pra.line-height-2-22 {
   font-weight: 600;
   line-height: 1.625;
   color: #222222;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
 }
 
@@ -21558,7 +21558,7 @@ Dividers Area
   font-weight: 500;
   line-height: 1.58;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .message-box.bg_cat--1 {
   background: #eee;
@@ -21616,7 +21616,7 @@ Dividers Area
   padding: 0;
   font-weight: 600;
   border: 0 none;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-appearance: none;
   display: block;
   background: #f7f7f7;
@@ -21650,7 +21650,7 @@ Dividers Area
   letter-spacing: 0em;
   line-height: 1.58;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   border: 0 none;
   -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
@@ -21677,7 +21677,7 @@ Dividers Area
   padding: 0;
   font-weight: 600;
   border: 0 none;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-appearance: none;
   display: block;
   position: relative;
@@ -21714,7 +21714,7 @@ Dividers Area
   font-weight: 500;
   line-height: 1.58;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   border: 0 none;
   -webkit-box-shadow: inherit;
           box-shadow: inherit;
@@ -22530,7 +22530,7 @@ body.loaded .page-loading {
   margin: 0;
   font-weight: 600;
   letter-spacing: 0em;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   .portfolio.portfolio_style--1 .port-overlay-info .hover-action h3.post-overlay-title {
@@ -23439,7 +23439,7 @@ body.loaded .page-loading {
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .portfolio-cation .port-overlay-info .hover-action .post-overlay-title a {
   color: #222222;
@@ -23497,7 +23497,7 @@ body.loaded .page-loading {
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .messonry-button button span.filter-counter::before {
   position: absolute;
@@ -25729,7 +25729,7 @@ Blog Main Quote
   margin-bottom: 20px;
   padding-bottom: 11px;
   border-bottom: 1px solid #eee;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   line-height: 1.23;
   color: #222222;
@@ -25907,7 +25907,7 @@ Shop Sidebar
   margin-bottom: 20px;
   padding-bottom: 11px;
   border-bottom: 1px solid #eee;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   line-height: 1.23;
   color: #222222;
@@ -28311,7 +28311,7 @@ Main Components
   font-weight: 600;
   line-height: 1.18;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #009EE2;
   padding-top: 41px;
   padding-bottom: 41px;
@@ -29429,7 +29429,7 @@ header.br_header.header-default.header-fixed {
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 21px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   margin: 0 0 18px;
 }
@@ -31441,7 +31441,7 @@ Shop Slide Area
 .product .product-info .price span {
   display: inline-block;
   color: #333333;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .product .product-info .price span.new-price {
   color: #d5382c;
@@ -31598,7 +31598,7 @@ Shop Slide Area
   transform: translateX(-50%);
 }
 .product .product-thumbnail .product-action .action-list.tooltip-layout li a[class*=hint--][aria-label]:after {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   line-height: 1.23;
   content: attr(aria-label);
@@ -32161,7 +32161,7 @@ Prresentation Area
   border-bottom-color: rgba(0, 0, 0, 0);
   margin-bottom: 19px;
   padding-bottom: 13px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .footer-widget .footer-menu ul.ft-menu-list {
   list-style: none;
@@ -32236,7 +32236,7 @@ Prresentation Area
   color: #fff;
 }
 .footer-widget.text-var--2 .footer-menu ul.ft-menu-list li a {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0em;
@@ -32245,12 +32245,12 @@ Prresentation Area
 .footer-widget.text-var--2 .footer-address p {
   font-size: 14px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .footer-widget.text-var--2 .footer-address p a {
   font-size: 14px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .footer-widget.news-bulletin .heading {
@@ -32358,11 +32358,11 @@ Prresentation Area
   color: #fff;
 }
 .copyright.text-var-2 .copyright-left ul.bk-copyright-menu li a {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
 }
 .copyright.text-var-2 .copyright-right p {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .copyright.copyright--2 .copyright-left p {
   margin: 0;
@@ -51683,50 +51683,50 @@ body.template-font-1 .h3,
 body.template-font-1 .h4,
 body.template-font-1 .h5,
 body.template-font-1 .h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .heading.font-reenie {
   font-family: "Reenie Beanie", cursive;
 }
 body.template-font-1 .mini-cart .shopping-cart .shop-inner ul.product-list li .content .inner h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .mega__width--fullscreen .mega__list li a span {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .mainmenu-wrapper .page_nav ul.mainmenu li.lavel-1 > a span {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .footer-widget .footer-menu ul.ft-menu-list li a {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .copyright ul.bk-copyright-menu li a {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .copyright .copyright-right p {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .footer-widget .footer-address p {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .form-style--1 .input-box input,
 body.template-font-1 .form-style--1 .input-box textarea {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .testimonial_style--1 .content p {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .testimonial_style--1 .content .testimonial-info .clint-info span {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .service.service--1 .content p {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .service.service--2 .content h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 body.template-font-1 .service.service--2 .content p {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 body.template-font-2 .heading,
@@ -52187,7 +52187,7 @@ body.template-font-8 .service.service--2 .content p {
 }
 .pv-service-wrapper .single-grid .inner h4 {
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
   word-wrap: break-word;
@@ -52634,7 +52634,12 @@ h3.heading-h3 br,
     height: 404px;
   }
 }
+.signifier-200-menu {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+  font-weight:200px !important;
+  font-size:16px !important;
 
+}
 .signifier-200 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-style: normal !important;
@@ -52642,6 +52647,59 @@ h3.heading-h3 br,
   color: rgb(0, 0, 0) !important;
   font-size: 33px !important;
   line-height: 43px !important;
+}
+
+.signifier-200-font {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-style: normal !important;
+  font-weight: 200 !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.folio {
+  height: 100vh; /* or any height you want */
+  width: 100%;   /* or set a specific width */
+  overflow: hidden;
+  position: relative;
+}
+
+.folio img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block; /* removes extra space below image */
+}
+.folios img{
+  min-height:345px;
+  object-fit: cover;
+
+}
+
+.social-img{
+  max-height: 800px !important;
+  width:100%;
+}
+
+.social-img img{
+  height: 800px !important;
+  width:100%;
+  object-fit: cover;
+}
+
+.socials-img{
+  min-height: 400px !important;
+  width:100%;
+}
+
+.socials-img img{
+  height: 400px !important;
+  width:100%;
+  object-fit: cover;
+}
+.font-size-25em{
+  font-size: 2.0em !important;
+  max-width:900px;
+  margin:0 auto;
 }
 
 @media (max-width: 767px) {

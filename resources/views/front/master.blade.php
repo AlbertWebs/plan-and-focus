@@ -55,22 +55,25 @@
                               <nav class="page_nav">
                                  <ul class="mainmenu">
                                     <li class="lavel-1 ">
-                                       <a href="#"><span>Home</span></a>
+                                       <a href="#home"><span class="signifier-200-menu">Home</span></a>
+                                    </li>
+                                     <li class="lavel-1 ">
+                                       <a href="#about-us"><span class="signifier-200-menu">About Us</span></a>
                                     </li>
                                     <li class="lavel-1 ">
-                                       <a href="#"><span>People</span></a>
+                                       <a href="#people"><span class="signifier-200-menu">People</span></a>
                                     </li>
-                                    <li class="lavel-1 with--drop slide-dropdown">
-                                       <a href="#"><span>Clients</span></a>
-                                    </li>
-                                    <li class="lavel-1 ">
-                                       <a href="#"><span>Work</span></a>
+                                    <li class="lavel-1">
+                                       <a href="#what-we-do"><span class="signifier-200-menu">What We Do</span></a>
                                     </li>
                                     <li class="lavel-1 ">
-                                       <a href="#"><span>Careers</span></a>
+                                       <a href="#people"><span class="signifier-200-menu">Work</span></a>
                                     </li>
                                     <li class="lavel-1 ">
-                                       <a href="#"><span>Contact</span></a>
+                                       <a href="#"><span class="signifier-200-menu">Careers</span></a>
+                                    </li>
+                                    <li class="lavel-1 ">
+                                       <a href="#contact"><span class="signifier-200-menu">Contact</span></a>
                                     </li>
                                  </ul>
                               </nav>
@@ -152,174 +155,27 @@
             </div>
          </div>
          <!-- End Brook Search Popup -->
-         <!-- Start Toolbar -->
-         <div class="demo-option-container">
-           
-            <!-- Start Quick Link -->
-            <div class="demo-option-wrapper">
-               <div class="demo-panel-header">
-                  <div class="panel-btn">
-                     <a class="brook-btn bk-btn-theme btn-sd-size btn-rounded space-between" href="https://themeforest.net/item/brook-creative-agency-business-html-template/24226512?s_rank=1"><i
-                        class="ion-android-cart"></i> Buy Brook Now </a>
-                  </div>
-                  <div class="title">
-                     <h5 class="heading heading-h5"> Brook – Creative Multipurpose Html5 Template</h5>
-                     <div class="desc">
-                        <p class="bk_pra"> Brook embraces a modern look with various enhanced short codes, premium
-                           plugins and pre-defined page elements.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="demo-quick-option-list">
-                  <a class="link hint--bounce hint--top hint--dark" href="index-business.html" aria-label="Business">
-                  <img src="img/demo-image/home-business.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-expert.html" aria-label="Expert">
-                  <img src="img/demo-image/home-expert.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-revolutionary.html" aria-label="Revolutionary">
-                  <img src="img/demo-image/home-revolutionary.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-authentic-studio.html" aria-label="Authentic Studio">
-                  <img src="img/demo-image/home-authentic-studio.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-astronomy.html" aria-label="Astronomy">
-                  <img src="img/demo-image/home-astronomy.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-news-bulletin.html" aria-label="News Bulletin">
-                  <img src="img/demo-image/home-news-bulletin.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-digital-broadsheets.html" aria-label="Digital Broadsheets">
-                  <img src="img/demo-image/home-digital-broadsheets.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-creative-agency.html" aria-label="Creative Agency">
-                  <img src="img/demo-image/home-creative-agency.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-digital-agency.html" aria-label="Digital Agency">
-                  <img src="img/demo-image/home-digital-agency.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-vertical-menu.html" aria-label="Vertical Menu">
-                  <img src="img/demo-image/home-vertical-menu.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-design-studio.html" aria-label="Design Studio">
-                  <img src="img/demo-image/home-design-studio.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-creative-portfolio.html" aria-label="Creative Portfolio">
-                  <img src="img/demo-image/home-creative-portfolio.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-freelancer.html" aria-label="Freelancer">
-                  <img src="img/demo-image/home-freelancer.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-vertical-slider-portfolio.html"
-                     aria-label="Vertical Slide Portfolio">
-                  <img src="img/demo-image/home-vertical-slide-portfolio.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-minimal-portfolio.html" aria-label="Minimal Portfolio">
-                  <img src="img/demo-image/home-minimal-portfolio.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-onepage.html" aria-label="Onepage">
-                  <img src="img/demo-image/home-onepage.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-landing.html" aria-label="Landing">
-                  <img src="img/demo-image/home-landing.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-architecture.html" aria-label="Architecture">
-                  <img src="img/demo-image/home-architecture.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-portfolio-fullscreen-type-hover-02.html"
-                     aria-label="Portfolio Fullscreen Type Hover 02">
-                  <img src="img/demo-image/home-hover-type-02.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-minimal-agency.html" aria-label="Minimal Agency">
-                  <img src="img/demo-image/home-minimal-agency.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-start-ups.html" aria-label="Start-ups">
-                  <img src="img/demo-image/home-start-ups.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-presentation.html" aria-label="Presentation">
-                  <img src="img/demo-image/home-presentation.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-blog-metro.html" aria-label="Metro Blog">
-                  <img src="img/demo-image/home-metro-blog.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-portfolio-mesonry-left-vertical-header.html"
-                     aria-label="Portfolio Masonry – Left Vertical Header">
-                  <img src="img/demo-image/home-portfolio-masonry-left-vertical-header.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-masonry-gallery.html" aria-label="Masonry Gallery">
-                  <img src="img/demo-image/home-masonry-gallery.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-home-services-classic.html" aria-label="Service">
-                  <img src="img/demo-image/home-service.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-minimal-metro-grid.html" aria-label="Minimal Metro Grid">
-                  <img src="img/demo-image/home-minimal-metro-grid.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-shop.html" aria-label="Shop">
-                  <img src="img/demo-image/home-shop.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-product-landing.html" aria-label="Product Landing">
-                  <img src="img/demo-image/home-product-landing.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-indie-musician.html" aria-label="Indie Musician">
-                  <img src="img/demo-image/home-indie-musician.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-foodie.html" aria-label="Foodie">
-                  <img src="img/demo-image/home-foodie.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-vertical-slide-gradient-portfolio.html"
-                     aria-label="Vertical Slide Gradient Portfolio">
-                  <img src="img/demo-image/home-vertical-slide-gradient-portfolio.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-portfolio-fullscreen-slider-left-vertical-header.html"
-                     aria-label="Portfolio Fullscreen Slider Left Vertical Header">
-                  <img src="img/demo-image/home-portfolio-fullscreen-slider-left-vertical-header.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-portfolio-fullscreen-type-hover.html"
-                     aria-label="Portfolio Fullscreen Type Hover">
-                  <img src="img/demo-image/home-hover-type.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-portfolio-slide.html" aria-label="Portfolio Slide">
-                  <img src="img/demo-image/home-portfolio-slide.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-photo-slider-gallery.html" aria-label="Photo Slider Gallery">
-                  <img src="img/demo-image/home-photo-slider-gallery.jpg" alt="Multipurpose Template"></a>
-                  <a class="link hint--bounce hint--top hint--dark" href="index-blog-grid.html" aria-label="Grid Blog">
-                  <img src="img/demo-image/home-grid-blog.jpg" alt="Multipurpose Template"></a>
-               </div>
-            </div>
-            <!-- End Quick Link -->
-         </div>
-         <!-- End Toolbar -->
+        
      
          @yield('content')
          <!-- Footer -->
          <footer class="page-footer bg_color--3 pl--150 pr--150 pl_lp--70 pr_lp--70 pl_lg--70 pr_lg--70 pl_md--50 pr_md--50 pl_sm--30 pr_sm--30">
-            <div class="bk-footer-inner pt--150 pb--60 pt_md--90 pt_sm--90 pb_md--30 pb_sm--20">
-               <div class="row">
-                  <div class="col-lg-5 col-xl-7 col-md-6 col-sm-6 col-12">
-                     <div class="footer-widget">
-                        <div class="logo">
-                           <a href="{{url('/')}}">
-                           <img src="{{asset('uploads/logo.svg')}}" alt="Logo image">
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-xl-2 col-md-6 col-sm-6 col-12 mt_mobile--40">
-                     <div class="footer-widget menu--about">
-                        <h2 class="widgettitle">About us</h2>
-                        <div class="footer-menu">
-                           <ul class="ft-menu-list bk-hover">
-                              <li><a href="#">About Us</a></li>
-                              <li><a href="#">Team</a></li>
-                              <li><a href="#">Career</a></li>
-                              <li><a href="#">Services</a></li>
-                              <li><a href="#">Contact</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
-                     <div class="footer-widget menu--contact">
-                        <h2 class="widgettitle">Contact</h2>
-                        <div class="footer-address bk-hover mb--20">
-                           <p>2005 Stokes Isle Apt. 896, <br> ana ville 10010, USA</p>
-                           <p><a href="#">info@yourdomain.com</a></p>
-                           <p><a href="#">(+68) 120034509</a></p>
-                        </div>
-                        <div class="social-share social--transparent text-white">
-                           <a href="#"><i class="fab fa-facebook"></i></a>
-                           <a href="#"><i class="fab fa-twitter"></i></a>
-                           <a href="#"><i class="fab fa-instagram"></i></a>
-                           <a href="#"><i class="fab fa-dribbble"></i></a>
-                           <a href="#"><i class="fab fa-pinterest"></i></a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
+   
             <!-- Start Copyright Area -->
             <div class="copyright ptb--50">
                <div class="row align-items-center">
                   <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                      <div class="copyright-left text-start">
                         <ul class="bk-copyright-menu d-flex justify-content-center justify-content-md-start bk-hover">
-                           <li><a href="#">Our blog</a></li>
-                           <li><a href="#">Latest projects</a></li>
-                           <li><a href="#">Contact us</a></li>
+                           <li><a href="#">Terms and Conditions</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                           <li><a href="#">Copyrigh Statement</a></li>
                         </ul>
                      </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                      <div class="copyright-right text-center text-md-end">
-                        <p>© 2019 Brook. <a href="https://hasthemes.com/">All Rights Reserved.</a></p>
+                        <p>© {{date('Y')}} Plan and Focus. <a href="{{url('/')}}">All Rights Reserved.</a></p>
                      </div>
                   </div>
                </div>

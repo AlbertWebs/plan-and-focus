@@ -2,8 +2,9 @@
 
 @section('content')
 
+    @include('front.slider')
     <!-- START REVOLUTION SLIDER -->
-         <div class="slider-revoluation slider-business">
+         {{-- <div class="slider-revoluation slider-business" id="home">
             <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="home-business"
                data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
                <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
@@ -44,7 +45,7 @@
                               data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']"
                               data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                               data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 70px; line-height: 78px; font-weight: 700; color: #ffffff; letter-spacing: 0px;">This
-                              is Brook 
+                              is P&F
                            </div>
                            <!-- LAYER NR. 3 -->
                            <div class="tp-caption tp-shape tp-shapewrapper " id="slide-1-layer-5" data-x="['left','left','left','left']"
@@ -67,8 +68,8 @@
                               data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']"
                               data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                               data-paddingleft="[0,0,0,0]" style="z-index: 10; min-width: 603px; max-width: 603px; max-width: 157px; max-width: 157px; white-space: normal; font-size: 70px; line-height: 78px; font-weight: 700; color: #ffffff; letter-spacing: 0px;">A
-                              full-service
-                              creative agency. 
+                              Fully Integrated
+                              PR & Digital Agency
                            </div>
                         </div>
                         <!-- LAYER NR. 5 -->
@@ -210,8 +211,7 @@
                               data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]"
                               data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']"
                               data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                              data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap; font-size: 70px; line-height: 78px; font-weight: 700; color: #ffffff; letter-spacing: 0px;">This
-                              is Brook 
+                              data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap; font-size: 70px; line-height: 78px; font-weight: 700; color: #ffffff; letter-spacing: 0px;">Strategic Communication
                            </div>
                            <!-- LAYER NR. 15 -->
                            <div class="tp-caption tp-shape tp-shapewrapper " id="slide-2-layer-5" data-x="['left','left','left','left']"
@@ -234,8 +234,7 @@
                               data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']"
                               data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                               data-paddingleft="[0,0,0,0]" style="z-index: 11; min-width: 603px; max-width: 603px; max-width: 157px; max-width: 157px; white-space: normal; font-size: 70px; line-height: 78px; font-weight: 700; color: #ffffff; letter-spacing: 0px;">A
-                              full-service
-                              creative agency. 
+                              Powerful Results.
                            </div>
                         </div>
                         <!-- LAYER NR. 17 -->
@@ -544,22 +543,23 @@
                   <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
                </div>
             </div>
-         </div>
+         </div> --}}
          <!-- END REVOLUTION SLIDER -->
         
 
          <!-- Page Conttent -->
          <main class="page-content">
               <!-- Start About Area -->
-            <div class="brook-about-area bg_image--26 ptb--100 ptb-md--100 ptb-sm--100">
+            <div class="brook-about-area bg_image--26 ptb--100 ptb-md--100 ptb-sm--100" id="about-us">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="about-content text-center wow move-up">
                                 <div class="bkseparator--10"></div>
-                                <p class="signifier-200">A small design
-                                    agency based in New <br> York. We love to find <span class="theme-color"><strong>simple solutions</strong></span>
-                                    to <br> complex challenges.
+                                 <p class="signifier-200 font-size-25em">
+                                    Plan and Focus is a results-driven agency specializing in 
+                                    <span class="theme-color"><strong>Public Relations & Media, Digital Marketing, Project Management, and Copywriting & Content Creation.</strong></span> 
+                                    We help brands shape narratives, manage campaigns, and boost visibility with clarity and creativity.
                                  </p>
                             </div>
                         </div>
@@ -567,8 +567,9 @@
                 </div>
             </div>
             <!-- End About Area -->
+            
             <!-- Start Service Area -->
-            <div class="brook-service-area plr--100 plr_lg--30 plr_md--50 plr_sm--30">
+            <div class="brook-service-area plr--100 plr_lg--30 plr_md--50 plr_sm--30" id="what-we-do">
                 <div class="row row--0 bg_color--14 align-items-center video-with-thumb">
                     <div class="col-lg-6">
                         <div class="service-thumb authenthic-service">
@@ -598,6 +599,100 @@
 
                 </div>
             </div>
+
+              <!-- Start Portfolio Area -->
+                <div class="brook-portfolio-area pt--100 rslide" data-background="#ae2883" id="people">
+                    <div class="container-fluid plr--100 plr_sm--30 plr_md--50">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="brook-section-title mb--30 text-center">
+                                    <h6 class="heading heading-h6 letter-spacing-3 signifier-200-font  wow move-up animate"  style="color:#000000">FEATURED WORKS</h6>
+                                    <div class="space mb--45"></div>
+                                    <h3 class="heading heading-h3 font-40 signifier-200" style="color:#000000">Making Brands Relevant in Africa</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row--25">
+
+                            <div class="col-lg-12 col-xl-6 mt--40  wow move-up animate">
+                                <!-- Start Single Portfolio -->
+                                <div class="portfolio-cation">
+                                    <div class="poss_relative">
+                                        <div class="thumb folio">
+                                            <img style="height:100%" src="{{asset('uploads/p16 LHS.jpg')}}" alt="Portfolio Images">
+                                        </div>
+                                        <div class="port-overlay-info">
+                                            <div class="hover-action">
+                                                <h3 class="post-overlay-title">
+                                                   <a href="#">Megapipes Solutions Limited</a>
+                                                      </h3>
+                                                <div class="category">Digital & PR</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Portfolio -->
+                            </div>
+                            <div class="col-lg-12 col-xl-6 mt--40  wow move-up animate">
+                                <div class="row row--25">
+                                    <div class="col-lg-12 col-xl-6">
+                                        <!-- Start Single Portfolio -->
+                                        <div class="portfolio-cation">
+                                            <div class="poss_relative">
+                                                <div class="thumb folios">
+                                                    <img src="{{asset('uploads/4857.avif')}}" alt="Portfolio Images">
+                                                </div>
+                                                <div class="port-overlay-info">
+                                                    <div class="hover-action">
+                                                        <h3 class="post-overlay-title"><a href="#">Vodafone</a></h3>
+                                                        <div class="category">Digital</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Portfolio -->
+                                    </div>
+                                    <div class="col-lg-12 col-xl-6 mt_lg--40 mt_md--40 mt_sm--40  wow move-up animate">
+                                        <!-- Start Single Portfolio -->
+                                        <div class="portfolio-cation">
+                                            <div class="poss_relative">
+                                                <div class="thumb folios">
+                                                    <img src="{{asset('uploads/fs-VTM-Machine-2018.xl.jpg')}}" alt="Portfolio Images">
+                                                </div>
+                                                <div class="port-overlay-info">
+                                                    <div class="hover-action">
+                                                        <h3 class="post-overlay-title"><a href="#">Vendibit</a></h3>
+                                                        <div class="category">Digital</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Portfolio -->
+                                    </div>
+                                    <div class="col-lg-12 mt--50  wow move-up animate">
+                                        <!-- Start Single Portfolio -->
+                                        <div class="portfolio-cation">
+                                            <div class="poss_relative">
+                                                <div class="thumb">
+                                                    <img src="{{asset('uploads/Acer-Aspire-Lite-14-header-1024x640.png')}}" alt="Portfolio Images">
+                                                </div>
+                                                <div class="port-overlay-info">
+                                                    <div class="hover-action">
+                                                        <h3 class="post-overlay-title"><a href="#">Acer Africa</a></h3>
+                                                        <div class="category">Digital</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Portfolio -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Portfolio Area -->
+
             <!-- Start Service Area -->
             <div class="bk-service-area section-ptb-xl bg_image--2">
                <div class="container">
@@ -605,22 +700,21 @@
                      <div class="col-lg-12">
                         <div class="section-title text-center wow move-up">
                            <h3>WHAT WE DO</h3>
-                           <h2>We design & build brands, campaigns & digital projects for businesses large &
-                              small.
+                           <h2 class="signifier-200">Center of Excelence
                            </h2>
                         </div>
                      </div>
                   </div>
                   <div class="row mt--70 mt_sm--20 mt_md--30">
                      <!-- Start Single Service -->
-                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow move-up">
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-12 wow move-up">
                         <div class="service service--1 text-center mt--30">
                            <div class="icons">
                               <i class="ion-ios-eye-outline"></i>
                            </div>
                            <div class="content">
-                              <h4>Modern Design</h4>
-                              <p>Brook embraces a modern look with various enhanced pre-defined page elements.
+                              <h4>Public Relations & Media</h4>
+                              <p>Strategic public relations and media management to keep your brand in the news for all the right reasons
                               </p>
                               <a class="service-btn" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
                            </div>
@@ -628,14 +722,14 @@
                      </div>
                      <!-- End Single Service -->
                      <!-- Start Single Service -->
-                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow move-up">
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-12 wow move-up">
                         <div class="service service--1 text-center mt--30">
                            <div class="icons">
                               <i class="ion-ios-bookmarks-outline"></i>
                            </div>
                            <div class="content">
-                              <h4>Modern Design</h4>
-                              <p>Brook embraces a modern look with various enhanced pre-defined page elements.
+                              <h4>Digital Marketing</h4>
+                              <p>We empower your business with digital marketing to increase your online presense, helping to grow your brand and support yur sales efforts
                               </p>
                               <a class="service-btn" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
                            </div>
@@ -643,14 +737,29 @@
                      </div>
                      <!-- End Single Service -->
                      <!-- Start Single Service -->
-                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow move-up">
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-12 wow move-up">
                         <div class="service service--1 text-center mt--30">
                            <div class="icons">
                               <i class="ion-ios-browsers-outline"></i>
                            </div>
                            <div class="content">
-                              <h4>Modern Design</h4>
-                              <p>Brook embraces a modern look with various enhanced pre-defined page elements.
+                              <h4>Project Management</h4>
+                              <p>We help manage projects from start ti excecution, ensuring quality work on time and within budget
+                              </p>
+                              <a class="service-btn" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- End Single Service -->
+                      <!-- Start Single Service -->
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-12 wow move-up">
+                        <div class="service service--1 text-center mt--30">
+                           <div class="icons">
+                              <i class="ion-ios-browsers-outline"></i>
+                           </div>
+                           <div class="content">
+                              <h4>Copywriting & content</h4>
+                              <p>We empower your business with digital marketing to increase your online presense, helping to grow your brand and support your sales
                               </p>
                               <a class="service-btn" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
                            </div>
@@ -662,309 +771,8 @@
             </div>
             <!-- End Service Area -->
             <!-- Start Portfolio Area -->
-            <div class="bk-portfolio-area">
-               <div class="black-bg-wrapper bg_color--3 section-pt-xl pb--240">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-lg-12">
-                           <div class="section-title text-center white-text wow move-up">
-                              <h3>PORTFOLIO</h3>
-                              <h2>Create and make your dream.</h2>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="portfolio-wrapper pl--150 pr--150 pl_lg--50 pr_lg--50 pl_md--50 pr_md--50 pl_sm--30 pr_sm--30">
-                  <div class="row row--0 space_dec--110">
-                     <!-- Start Single Portfolio -->
-                     <div class="col-lg-6">
-                        <div class="portfolio portfolio_style--1">
-                           <div class="thumb">
-                              <img src="{{asset('theme/img/portfolio/portfolio-1/portfolio-1.jpg')}}" alt="Portfolio Images">
-                           </div>
-                           <div class="port-overlay-info">
-                              <div class="hover-action">
-                                 <h3 class="post-overlay-title"><a href="portfolio-details.html">A Golden Age of
-                                    Design</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Portfolio -->
-                     <div class="col-lg-6">
-                        <div class="row row--0">
-                           <div class="col-lg-12 wow move-up">
-                              <!-- Start Single Portfolio -->
-                              <div class="portfolio portfolio_style--1">
-                                 <div class="thumb">
-                                    <img src="{{asset('theme/img/portfolio/portfolio-1/portfolio-2.jpg')}}" alt="Portfolio Images">
-                                 </div>
-                                 <div class="port-overlay-info">
-                                    <div class="hover-action">
-                                       <h3 class="post-overlay-title"><a href="portfolio-details.html">New Age
-                                          Design</a>
-                                       </h3>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- End Single Portfolio -->
-                           </div>
-                           <div class="col-lg-6 wow move-up">
-                              <!-- Start Single Portfolio -->
-                              <div class="portfolio portfolio_style--1">
-                                 <div class="thumb">
-                                    <img src="{{asset('theme/img/portfolio/portfolio-1/portfolio-3.jpg')}}" alt="Portfolio Images">
-                                 </div>
-                                 <div class="port-overlay-info">
-                                    <div class="hover-action">
-                                       <h3 class="post-overlay-title"><a href="portfolio-details.html">Website
-                                          Success Prospects</a>
-                                       </h3>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- End Single Portfolio -->
-                           </div>
-                           <div class="col-lg-6 wow move-up">
-                              <!-- Start Single Portfolio -->
-                              <div class="portfolio portfolio_style--1">
-                                 <div class="thumb">
-                                    <img src="{{asset('theme/img/portfolio/portfolio-1/portfolio-4.jpg')}}" alt="Portfolio Images">
-                                 </div>
-                                 <div class="port-overlay-info">
-                                    <div class="hover-action">
-                                       <h3 class="post-overlay-title"><a href="portfolio-details.html">Web
-                                          Comic Landscape</a>
-                                       </h3>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- End Single Portfolio -->
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- End Portfolio Area -->
-            <!-- Start CounterUp Area -->
-            <div class="bk-number-speaks section-ptb-xl bg_image--3">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
-                        <div class="number-speaks">
-                           <div class="content wow move-up">
-                              <h3 class="theme-color">NUMBER SPEAKS</h3>
-                              <h2>We always ready <br> for a <span class="secondary-color">challenge.</span></h2>
-                              <a class="bk-btn theme-btn" href="#">Learn More</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12 mt_md--40 mt_sm--40">
-                        <div class="speakers-number-wrap">
-                           <!-- Start Single Count -->
-                           <div class="number-wrap wow move-up">
-                              <span class="count theme-color">1035</span>
-                              <div class="content">
-                                 <h6>Successful projects</h6>
-                                 <p>Since its establishment in 2000, Brook Creative has been focusing on project
-                                    management & implementation
-                                    through cooperation.
-                                 </p>
-                              </div>
-                           </div>
-                           <!-- End Single Count -->
-                           <!-- Start Single Count -->
-                           <div class="number-wrap mt--70 wow move-up">
-                              <span class="count theme-color">2034</span>
-                              <div class="content">
-                                 <h6>Unique designs</h6>
-                                 <p>In total, Brook Creative has created more than 2000 projects related to
-                                    constructional designing and
-                                    landscaping worldwide.
-                                 </p>
-                              </div>
-                           </div>
-                           <!-- End Single Count -->
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- End CounterUp Area -->
-            <!-- Start Team Area -->
-            <div class="bk-team-area ptb--60 pb_sm--5 bg_color--1">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-lg-12">
-                        <div class="team-heading d-flex justify-content-between wow move-up">
-                           <div class="heading-left">
-                              <h3 class="theme-color">Our creative crew.</h3>
-                           </div>
-                           <div class="heading-right">
-                              <button>View all members <i class="fa fa-arrow-right"></i> </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <!-- Start Single Team -->
-                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow move-up">
-                        <div class="team team_style--1">
-                           <!-- Image Wrap -->
-                           <div class="image-wrap">
-                              <div class="thumb">
-                                 <img src="{{asset('theme/img/team/team-1/team-1.jpg')}}" alt="Team images">
-                                 <div class="overlay"></div>
-                                 <div class="shape">
-                                    <img class="shape-01" src="{{asset('theme/img/team/shape/team-shape-1.png')}}" alt="shape image">
-                                    <img class="shape-02" src="{{asset('theme/img/team/shape/team-shape-2.png')}}" alt="shape image">
-                                    <img class="shape-03" src="{{asset('theme/img/team/shape/team-shape-3.png')}}" alt="shape image">
-                                 </div>
-                              </div>
-                              <!-- Social Network -->
-                              <div class="social-networks">
-                                 <div class="inner">
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Facebook">
-                                    <i class="fab fa-facebook"></i>
-                                    </a>
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Twitter">
-                                    <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- Team Info -->
-                           <div class="info">
-                              <h6 class="name">Caroline Roses</h6>
-                              <span class="position">Designer</span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Team -->
-                     <!-- Start Single Team -->
-                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow move-up">
-                        <div class="team team_style--1">
-                           <!-- Image Wrap -->
-                           <div class="image-wrap">
-                              <div class="thumb">
-                                 <img src="{{asset('theme/img/team/team-1/team-2.jpg')}}" alt="Team images">
-                                 <div class="overlay"></div>
-                                 <div class="shape">
-                                    <img class="shape-01" src="{{asset('theme/img/team/shape/team-shape-1.png')}}" alt="shape image">
-                                    <img class="shape-02" src="{{asset('theme/img/team/shape/team-shape-2.png')}}" alt="shape image">
-                                    <img class="shape-03" src="{{asset('theme/img/team/shape/team-shape-3.png')}}" alt="shape image">
-                                 </div>
-                              </div>
-                              <!-- Social Network -->
-                              <div class="social-networks">
-                                 <div class="inner">
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Facebook">
-                                    <i class="fab fa-facebook"></i>
-                                    </a>
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Twitter">
-                                    <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- Team Info -->
-                           <div class="info">
-                              <h6 class="name">Blake Hamilton</h6>
-                              <span class="position">Engineer</span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Team -->
-                     <!-- Start Single Team -->
-                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow move-up">
-                        <div class="team team_style--1">
-                           <!-- Image Wrap -->
-                           <div class="image-wrap">
-                              <div class="thumb">
-                                 <img src="{{asset('theme/img/team/team-1/team-3.jpg')}}" alt="Team images">
-                                 <div class="overlay"></div>
-                                 <div class="shape">
-                                    <img class="shape-01" src="{{asset('theme/img/team/shape/team-shape-1.png')}}" alt="shape image">
-                                    <img class="shape-02" src="{{asset('theme/img/team/shape/team-shape-2.png')}}" alt="shape image">
-                                    <img class="shape-03" src="{{asset('theme/img/team/shape/team-shape-3.png')}}" alt="shape image">
-                                 </div>
-                              </div>
-                              <!-- Social Network -->
-                              <div class="social-networks">
-                                 <div class="inner">
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Facebook">
-                                    <i class="fab fa-facebook"></i>
-                                    </a>
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Twitter">
-                                    <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- Team Info -->
-                           <div class="info">
-                              <h6 class="name">Kashara May</h6>
-                              <span class="position">Founder</span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Team -->
-                     <!-- Start Single Team -->
-                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow move-up">
-                        <div class="team team_style--1">
-                           <!-- Image Wrap -->
-                           <div class="image-wrap">
-                              <div class="thumb">
-                                 <img src="{{asset('theme/img/team/team-1/team-4.jpg')}}" alt="Team images">
-                                 <div class="overlay"></div>
-                                 <div class="shape">
-                                    <img class="shape-01" src="{{asset('theme/img/team/shape/team-shape-1.png')}}" alt="shape image">
-                                    <img class="shape-02" src="{{asset('theme/img/team/shape/team-shape-2.png')}}" alt="shape image">
-                                    <img class="shape-03" src="{{asset('theme/img/team/shape/team-shape-3.png')}}" alt="shape image">
-                                 </div>
-                              </div>
-                              <!-- Social Network -->
-                              <div class="social-networks">
-                                 <div class="inner">
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Facebook">
-                                    <i class="fab fa-facebook"></i>
-                                    </a>
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Twitter">
-                                    <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a class="hint--bounce hint--top hint--primary" href="#" aria-label="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- Team Info -->
-                           <div class="info">
-                              <h6 class="name">Peter Parker</h6>
-                              <span class="position">Marketing</span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Team -->
-                  </div>
-               </div>
-            </div>
-            <!-- End Team Area -->
-            <!-- Start Testimonial Area -->
-            <div class="bk-testimonial-area section-ptb-xl bg_color--1 poss_relative pt_sm--0">
-               <div class="wavify-wrapper">
+            <div class="bk-testimonial-area section-ptb-xl bg_color--1">
+                <div class="wavify-wrapper">
                   <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="wavify-item"
                      data-wavify-height="140" data-wavify-background="rgba(245,245,245,0.5)" data-wavify-amplitude="80"
                      data-wavify-bones="4">
@@ -981,292 +789,120 @@
                <div class="container section-pt-xl">
                   <div class="row">
                      <div class="col-lg-12">
-                        <div class="section-title text-center wow move-up">
-                           <h3 class="theme-color">Testimonials</h3>
-                           <h2>Feedback from our clients.</h2>
+                        <div class="section-title text-center wow move-up animate">
+                           <h2 style="signifier-200-font ">Digital at Work.</h2>
                         </div>
                      </div>
                   </div>
                </div>
-               <!-- Start Testimonial Wrapper -->
-               <div class="testimonial-wrapper testimonial--horizontal testimonial--horizontal--active pagination-style-01 mt--80 wow move-up">
-                  <div class="testimonial-container swiper-wrapper">
-                     <!-- Start Single Testimonial -->
-                     <div class="testimonial testimonial_style--1 swiper-slide">
-                        <div class="content">
-                           <p>“Theme is <span class="theme-color">@intuitive</span> to use. Even for a WordPress
-                              beginner like me, Brook
-                              offers all the functions and features with simple instructions”
-                           </p>
-                           <div class="testimonial-info">
-                              <div class="post-thumbnail">
-                                 <img src="{{asset('theme/img/testimonial/clint-1/clint-1.jpg')}}" alt="clint image">
-                              </div>
-                              <div class="clint-info">
-                                 <h6>Harley Mills</h6>
-                                 <span>PR Officer</span>
-                              </div>
+              
+               <div class="container section-pt-xl wow move-up animate">
+                  <div class="row row--0 space_dec--110">
+                     <!-- Start Single Portfolio -->
+                     <div class="col-lg-6">
+                        <div class="portfolio portfolio_style--1">
+                           <div class="thumb social-img">
+                              <img src="{{asset('uploads/65.jpg')}}" alt="Portfolio Images">
                            </div>
-                           <div class="testimonial-quote">
-                              <span class="fa fa-quote-right"></span>
+                           <div class="port-overlay-info">
+                              <div class="hover-action">
+                                 <h3 class="post-overlay-title"><a href="#">Digital at Work</a>
+                                 </h3>
+                              </div>
                            </div>
                         </div>
                      </div>
-                     <!-- End Single Testimonial -->
-                     <!-- Start Single Testimonial -->
-                     <div class="testimonial testimonial_style--1 swiper-slide">
-                        <div class="content">
-                           <p>“I’m running a multi-area website so this multipurpose theme is just what I need.
-                              <span class="theme-color">@Brook</span>
-                              really has great concepts for creative agencies like ours.”
-                           </p>
-                           <div class="testimonial-info">
-                              <div class="post-thumbnail">
-                                 <img src="{{asset('theme/img/testimonial/clint-1/clint-2.jpg')}}" alt="clint image">
+                     <!-- End Single Portfolio -->
+                     <div class="col-lg-6">
+                        <div class="row row--0">
+                           <div class="col-lg-12 wow move-up">
+                              <!-- Start Single Portfolio -->
+                              <div class="portfolio portfolio_style--1">
+                                 <div class="thumb socials-img">
+                                    <img src="{{asset('uploads/66.jpg')}}" alt="Portfolio Images">
+                                 </div>
+                                 <div class="port-overlay-info">
+                                    <div class="hover-action">
+                                       <h3 class="post-overlay-title"><a href="#">New Age
+                                          Design</a>
+                                       </h3>
+                                    </div>
+                                 </div>
                               </div>
-                              <div class="clint-info">
-                                 <h6>Np Nipa</h6>
-                                 <span>PR Officer</span>
+                              <!-- End Single Portfolio -->
+                           </div>
+                           <div class="col-lg-12 wow move-up">
+                              <!-- Start Single Portfolio -->
+                              <div class="portfolio portfolio_style--1">
+                                 <div class="thumb socials-img">
+                                    <img src="{{asset('uploads/67.jpg')}}" alt="Portfolio Images">
+                                 </div>
+                                 <div class="port-overlay-info">
+                                    <div class="hover-action">
+                                       <h3 class="post-overlay-title"><a href="#">New Age
+                                          Design</a>
+                                       </h3>
+                                    </div>
+                                 </div>
                               </div>
+                              <!-- End Single Portfolio -->
                            </div>
-                           <div class="testimonial-quote">
-                              <span class="fa fa-quote-right"></span>
-                           </div>
+                          
                         </div>
                      </div>
-                     <!-- End Single Testimonial -->
-                     <!-- Start Single Testimonial -->
-                     <div class="testimonial testimonial_style--1 swiper-slide">
-                        <div class="content">
-                           <p>“This is just the most powerful theme I’ve ever met. Love to talk with their staff
-                              about how to explore all
-                              the capabilities of the <span class="theme-color">@Brook theme.</span>”
-                           </p>
-                           <div class="testimonial-info">
-                              <div class="post-thumbnail">
-                                 <img src="{{asset('theme/img/testimonial/clint-1/clint-3.jpg')}}" alt="clint image">
-                              </div>
-                              <div class="clint-info">
-                                 <h6>Fatima Asrafi</h6>
-                                 <span>PR Officer</span>
-                              </div>
-                           </div>
-                           <div class="testimonial-quote">
-                              <span class="fa fa-quote-right"></span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Testimonial -->
-                     <!-- Start Single Testimonial -->
-                     <div class="testimonial testimonial_style--1 swiper-slide">
-                        <div class="content">
-                           <p>““Brook’s support team was very <span class="theme-color">@professional</span> .
-                              They can help me with
-                              fast and accurate solutions to all kinds of issues. Five.”
-                           </p>
-                           <div class="testimonial-info">
-                              <div class="post-thumbnail">
-                                 <img src="{{asset('theme/img/testimonial/clint-1/clint-4.jpg')}}" alt="clint image">
-                              </div>
-                              <div class="clint-info">
-                                 <h6>Janes Jak</h6>
-                                 <span>PR Officer</span>
-                              </div>
-                           </div>
-                           <div class="testimonial-quote">
-                              <span class="fa fa-quote-right"></span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Testimonial -->
-                     <!-- Start Single Testimonial -->
-                     <div class="testimonial testimonial_style--1 swiper-slide">
-                        <div class="content">
-                           <p>“Theme is <span class="theme-color">@intuitive</span> to use. Even for a WordPress
-                              beginner like me, Brook
-                              offers all the functions and features with simple instructions”
-                           </p>
-                           <div class="testimonial-info">
-                              <div class="post-thumbnail">
-                                 <img src="{{asset('theme/img/testimonial/clint-1/clint-5.jpg')}}" alt="clint image">
-                              </div>
-                              <div class="clint-info">
-                                 <h6>Henry Fayol</h6>
-                                 <span>PR Officer</span>
-                              </div>
-                           </div>
-                           <div class="testimonial-quote">
-                              <span class="fa fa-quote-right"></span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Testimonial -->
-                     <!-- Start Single Testimonial -->
-                     <div class="testimonial testimonial_style--1 swiper-slide">
-                        <div class="content">
-                           <p>““The theme navigation is smooth and clean. Thanks to <span class="theme-color">@Brook
-                              theme</span>, my
-                              blogs now attracts thousands of audiences on a daily basis.”
-                           </p>
-                           <div class="testimonial-info">
-                              <div class="post-thumbnail">
-                                 <img src="{{asset('theme/img/testimonial/clint-1/clint-6.jpg')}}" alt="clint image">
-                              </div>
-                              <div class="clint-info">
-                                 <h6>Harley Mills</h6>
-                                 <span>PR Officer</span>
-                              </div>
-                           </div>
-                           <div class="testimonial-quote">
-                              <span class="fa fa-quote-right"></span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Testimonial -->
-                     <!-- Start Single Testimonial -->
-                     <div class="testimonial testimonial_style--1 swiper-slide">
-                        <div class="content">
-                           <p>“Theme is <span class="theme-color">@intuitive</span> to use. Even for a WordPress
-                              beginner like me, Brook
-                              offers all the functions and features with simple instructions”
-                           </p>
-                           <div class="testimonial-info">
-                              <div class="post-thumbnail">
-                                 <img src="{{asset('theme/img/testimonial/clint-1/clint-7.jpg')}}" alt="clint image">
-                              </div>
-                              <div class="clint-info">
-                                 <h6>Harley Mills</h6>
-                                 <span>PR Officer</span>
-                              </div>
-                           </div>
-                           <div class="testimonial-quote">
-                              <span class="fa fa-quote-right"></span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Testimonial -->
-                     <!-- Start Single Testimonial -->
-                     <div class="testimonial testimonial_style--1 swiper-slide">
-                        <div class="content">
-                           <p>“Theme is <span class="theme-color">@intuitive</span> to use. Even for a WordPress
-                              beginner like me, Brook
-                              offers all the functions and features with simple instructions”
-                           </p>
-                           <div class="testimonial-info">
-                              <div class="post-thumbnail">
-                                 <img src="{{asset('theme/img/testimonial/clint-1/clint-1.jpg')}}" alt="clint image">
-                              </div>
-                              <div class="clint-info">
-                                 <h6>Harley Mills</h6>
-                                 <span>PR Officer</span>
-                              </div>
-                           </div>
-                           <div class="testimonial-quote">
-                              <span class="fa fa-quote-right"></span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Testimonial -->
-                     <!-- Start Single Testimonial -->
-                     <div class="testimonial testimonial_style--1 swiper-slide">
-                        <div class="content">
-                           <p>“Theme is <span class="theme-color">@intuitive</span> to use. Even for a WordPress
-                              beginner like me, Brook
-                              offers all the functions and features with simple instructions”
-                           </p>
-                           <div class="testimonial-info">
-                              <div class="post-thumbnail">
-                                 <img src="{{asset('theme/img/testimonial/clint-1/clint-1.jpg')}}" alt="clint image">
-                              </div>
-                              <div class="clint-info">
-                                 <h6>Harley Mills</h6>
-                                 <span>PR Officer</span>
-                              </div>
-                           </div>
-                           <div class="testimonial-quote">
-                              <span class="fa fa-quote-right"></span>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Testimonial -->
                   </div>
-                  <!-- Add Pagination -->
-                  <div class="swiper-pagination"></div>
                </div>
-               <!-- End Testimonial Wrapper -->
             </div>
-            <!-- End Testimonial Area -->
-            <!-- Start Brand Area -->
-            <div class="bk-brand-area bg_color--1 ptb--60">
+            <!-- End Portfolio Area -->
+            <!-- Start CounterUp Area -->
+            <div class="bk-number-speaks section-ptb-xl bg_image--3">
                <div class="container">
                   <div class="row">
-                     <div class="col-lg-12">
-                        <div class="brand-wrapper">
-                           <div class="brand__list brand-default brand-style--1">
-                              <div class="brook-element-carousel" data-slick-options='{
-                                 "spaceBetween": 15, 
-                                 "slidesToShow": 5, 
-                                 "slidesToScroll": 1, 
-                                 "arrows": false, 
-                                 "infinite": true
-                                 }'
-                                 data-slick-responsive='[
-                                 {"breakpoint":768, "settings": {"slidesToShow": 3}},
-                                 {"breakpoint":577, "settings": {"slidesToShow": 3}},
-                                 {"breakpoint":481, "settings": {"slidesToShow": 2}}
-                                 ]'>
-                                 <div class="brand"><a href="#"><img src="{{asset('theme/img/testimonial/clint-2/client-logo-01.png')}}"
-                                    alt="logo image"></a>
-                                 </div>
-                                 <div class="brand"><a href="#"><img src="{{asset('theme/img/testimonial/clint-2/client-logo-02.png')}}"
-                                    alt="logo image"></a>
-                                 </div>
-                                 <div class="brand"><a href="#"><img src="{{asset('theme/img/testimonial/clint-2/client-logo-03.png')}}"
-                                    alt="logo image"></a>
-                                 </div>
-                                 <div class="brand"><a href="#"><img src="{{asset('theme/img/testimonial/clint-2/client-logo-04.png')}}"
-                                    alt="logo image"></a>
-                                 </div>
-                                 <div class="brand"><a href="#"><img src="{{asset('theme/img/testimonial/clint-2/client-logo-05.png')}}"
-                                    alt="logo image"></a>
-                                 </div>
-                                 <div class="brand"><a href="#"><img src="{{asset('theme/img/testimonial/clint-2/client-logo-01.png')}}"
-                                    alt="logo image"></a>
-                                 </div>
-                                 <div class="brand"><a href="#"><img src="{{asset('theme/img/testimonial/clint-2/client-logo-06.png')}}"
-                                    alt="logo image"></a>
-                                 </div>
-                                 <div class="brand"><a href="#"><img src="{{asset('theme/img/testimonial/clint-2/client-logo-05.png')}}"
-                                    alt="logo image"></a>
-                                 </div>
-                                 <div class="brand"><a href="#"><img src="{{asset('theme/img/testimonial/clint-2/client-logo-01.png')}}"
-                                    alt="logo image"></a>
-                                 </div>
-                                 <div class="brand"><a href="#"><img src="{{asset('theme/img/testimonial/clint-2/client-logo-06.png')}}"
-                                    alt="logo image"></a>
-                                 </div>
+                     <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+                        <div class="number-speaks">
+                           <div class="content wow move-up">
+                              <h3 class="theme-color">NUMBER SPEAKS</h3>
+                              <h2 class="signifier-200-font">We always ready <br> for a <span class="secondary-color">challenge.</span></h2>
+                              <a class="bk-btn theme-btn" href="#">Learn More</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12 mt_md--40 mt_sm--40">
+                        <div class="speakers-number-wrap">
+                           <!-- Start Single Count -->
+                           <div class="number-wrap wow move-up">
+                              <span class="count theme-color">1035</span>
+                              <div class="content">
+                                 <h6>Completed Projects</h6>
+                                 <p>
+                                    Since its establishment in 2000, Plan and Focus has been focusing on project management & implementation through cooperation. Since 2015, the company has successfully completed over 1,000 campaigns.
+                                 </p>
                               </div>
                            </div>
+                           <!-- End Single Count -->
+                           <!-- Start Single Count -->
+                           <div class="number-wrap mt--70 wow move-up">
+                              <span class="count theme-color">234</span>
+                              <div class="content">
+                                 <h6>Visual Campaigns designs</h6>
+                                 <p>
+                                    In total, Plan and Focus has run over 200 visual campaigns, including billboards and other outdoor media. These campaigns reflect the company's expertise in creating impactful and strategically placed visual content that resonates with target audiences.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- End Single Count -->
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <!-- End Brand Area -->
+            <!-- End CounterUp Area -->
+          
+     
+       
             <!-- Start Blog Area -->
-            <div class="bk-blog-area">
-               <div class="black-bg-wrapper bg_image--4 section-pt-xl pb--320">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-lg-12">
-                           <div class="section-title text-center white-text wow move-up">
-                              <h3>LATEST NEWS</h3>
-                              <h2>From our blogs.</h2>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+            <div class="bk-blog-area mt--200">
+              
                <div class="blog-wrapper pl--230 pr--230 pr_lp--100 pl_lp--100 pl_lg--100 pr_lg--100 pl_md--50 pr_md--50 pl_sm--30 pr_sm--30 section-pb-xl">
                   <div class="row row--0 space_dec--250">
                      <!-- Start Single Portfolio -->
@@ -1281,11 +917,11 @@
                                     <a class="video-icon play__btn" href="https://www.youtube.com/watch?v=9No-FiEInLA"></a>
                                  </div>
                                  <ul class="meta">
-                                    <li>January 7, 2018</li>
+                                    <li>January 7, 2025</li>
                                     <li><a href="#">Photography</a></li>
                                  </ul>
                                  <h3 class="the-title"><a href="blog-details.html">Career Tips For Emerging
-                                    Photographers</a>
+                                    Digital Agencies</a>
                                  </h3>
                               </div>
                            </div>
@@ -1301,11 +937,11 @@
                            <div class="blog-content blog-position--bottom">
                               <div class="content">
                                  <ul class="meta">
-                                    <li>January 7, 2018</li>
+                                    <li>January 7, 2025</li>
                                     <li><a href="#">Photography</a></li>
                                  </ul>
                                  <h3 class="the-title"><a href="blog-details.html">Career Tips For Emerging
-                                    Photographers</a>
+                                    Digital Agencies</a>
                                  </h3>
                               </div>
                            </div>
@@ -1321,7 +957,7 @@
                            <div class="blog-content blog-position--bottom">
                               <div class="content">
                                  <h3 class="the-title"><a href="blog-details.html">Career Tips For Emerging
-                                    Photographers</a>
+                                    Digital Agencies</a>
                                  </h3>
                                  <h6 class="post-quote-by"><a href="#">- Kasahara May</a></h6>
                               </div>
@@ -1334,7 +970,7 @@
             </div>
             <!-- End Blog Area -->
             <!-- Start Contact Area -->
-            <div class="bk-contact-area section-pb-xl bg_color--1">
+            <div class="bk-contact-area section-pb-xl bg_color--1" id="contact">
                <div class="container">
                   <div class="row">
                      <!-- Start Address -->
@@ -1342,12 +978,12 @@
                         <div class="address-inner">
                            <div class="address wow move-up">
                               <h3 class="heading">Visit our studio at</h3>
-                              <p>2005 Stokes Isle Apt. 896, Shop Plaza 10010, USA</p>
+                              <p>2005 Westlands Lane Apt. 896, Shop Plaza 10010, Nairobi</p>
                            </div>
                            <div class="address mt--60 mb--60 wow move-up">
                               <h3 class="heading">Message us</h3>
-                              <p><a href="#">info@yourdomain.com</a></p>
-                              <p><a href="#">(+68) 120034509</a></p>
+                              <p><a href="#">info@planadnfocus.com</a></p>
+                              <p><a href="#">(+254) 723 014 032</a></p>
                            </div>
                            <ul class="social-icon icon-size-medium text-dark text-start tooltip-layout move-up wow">
                               <li class="facebook"><a href="#" class="link hint--bounce hint--top hint--theme"
