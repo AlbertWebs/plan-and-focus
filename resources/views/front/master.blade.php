@@ -18,6 +18,9 @@
       <link rel="stylesheet" href="{{asset('theme/css/style.css')}}">
       <!-- Custom Styles -->
       <link rel="stylesheet" href="{{asset('theme/css/custom.css')}}">
+      <!-- Font Awesome CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-y1N8lZy+Xz+O7zlmS6XK1rBnX0V8ZsYF1Q1D4JEVVTVS4bPln2Xe5AxDprmJGcOrXL1KXrg+JY7rV+vHpXW1/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
    </head>
    <body class="template-color-1 template-font-2">
       <!--[if lte IE 9]>
@@ -61,17 +64,12 @@
                                        <a href="#about-us"><span class="signifier-200-menu">About Us</span></a>
                                     </li>
                                     <li class="lavel-1 ">
-                                       <a href="#people"><span class="signifier-200-menu">People</span></a>
+                                       <a href="#people"><span class="signifier-200-menu">Services</span></a>
                                     </li>
                                     <li class="lavel-1">
-                                       <a href="#what-we-do"><span class="signifier-200-menu">What We Do</span></a>
+                                       <a href="#what-we-do"><span class="signifier-200-menu">Why Work With Us</span></a>
                                     </li>
-                                    <li class="lavel-1 ">
-                                       <a href="#people"><span class="signifier-200-menu">Work</span></a>
-                                    </li>
-                                    <li class="lavel-1 ">
-                                       <a href="#"><span class="signifier-200-menu">Careers</span></a>
-                                    </li>
+                                    
                                     <li class="lavel-1 ">
                                        <a href="#contact"><span class="signifier-200-menu">Contact</span></a>
                                     </li>

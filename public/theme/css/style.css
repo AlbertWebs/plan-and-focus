@@ -1073,7 +1073,7 @@ Animation Css
 }
 
 .secondary-color {
-  color: #FF5EE1;
+  color: #FCB72B;
 }
 
 .creative-color {
@@ -11100,10 +11100,12 @@ button.brook-btn.bk-btn-pink {
 a.brook-btn.bk-btn-red,
 button.brook-btn.bk-btn-red {
   background: #F0263F;
+ 
 }
 a.brook-btn.red-color-5,
 button.brook-btn.red-color-5 {
-  background: #d0021b;
+  background: #FFDA00;
+   border:3px solid #2B3990; 
 }
 a.brook-btn.color-green,
 button.brook-btn.color-green {
