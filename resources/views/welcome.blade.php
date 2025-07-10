@@ -7,13 +7,13 @@
          <!-- Page Conttent -->
          <main class="page-content">
               <!-- Start About Area -->
-            <div class="brook-about-area bg_image--26 ptb--100 ptb-md--100 ptb-sm--100" id="about-us">
+            <div class="brook-about-area bg_image--26 ptb--100 ptb-md--100 ptb-sm--100" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="about-content text-center wow move-up">
                                 <div class="bkseparator--10"></div>
-                                 <p class="signifier-200 font-size-25em">
+                                 <p class="signifier-200 font-size-25em navy new-font">
                                     Plan and Focus is a results-driven agency specializing in 
                                     <span class="theme-color"><strong>Public Relations & Media, Digital Marketing, Project Management, and Copywriting & Content Creation.</strong></span> 
                                     We help brands shape narratives, manage campaigns, and boost visibility with clarity and creativity.
@@ -55,7 +55,7 @@
                         <div class="service-content authenthic-service plr--170 plr_lg--70 plr_md--30 plr_sm--30">
                             <h6 class="heading headin-h6 theme-color letter-spacing-3 theme-color">What we do</h6>
                             <div class="bkseparator--30"></div>
-                            <h3 class="heading heading-h1 heading-font line-height-1-5 cd-headline clip is-full-width move-up wow">Marketing and Communications
+                            <h3 class="heading heading-h1 heading-font line-height-1-5 cd-headline clip is-full-width move-up wow navy new-font">Marketing and Communications
                                 <span class="cd-words-wrapper theme-color">
                                     <b class="is-visible">TV, Radio, and Digital Advertising</b>
                                     <b>Integrated 360° Campaigns</b>
@@ -76,14 +76,14 @@
             </div>
 
               <!-- Start Portfolio Area -->
-                <div class="brook-portfolio-area pt--100 rslide" data-background="#ae2883" id="people">
+                <div class="brook-portfolio-area pt--100 rslide" data-background="#ae2883" id="services">
                     <div class="container-fluid plr--100 plr_sm--30 plr_md--50">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="brook-section-title mb--30 text-center">
-                                    <h6 class="heading heading-h6 letter-spacing-3 signifier-200-font  wow move-up animate"  style="color:#000000">FEATURED WORKS</h6>
+                                    <h6 class="heading heading-h6 letter-spacing-3 signifier-200-font  wow move-up animate new-font"  style="color:#000000">FEATURED WORKS</h6>
                                     <div class="space mb--45"></div>
-                                    <h3 class="heading heading-h3 font-40 signifier-200" style="color:#000000">Making Brands Relevant in Africa</h3>
+                                    <h3 class="heading heading-h3 font-40 signifier-200 navy wow move-up animate theme-heading">Making <strong>Brands</strong> Relevant in Africa</h3>
                                 </div>
                             </div>
                         </div>
@@ -184,8 +184,8 @@
                   <div class="row">
                      <div class="col-lg-12">
                         <div class="section-title text-center wow move-up">
-                           <h3>WHAT WE DO</h3>
-                           <h2 class="signifier-200">Center of Excelence
+                           <h3 class="heading heading-h6 letter-spacing-3 signifier-200-font  wow move-up animate new-font">WHAT WE DO</h3>
+                           <h2 class="signifier-200 navy wow move-up animate theme-heading">Center of Excelence
                            </h2>
                         </div>
                      </div>
@@ -257,23 +257,23 @@
             </div>
             <!-- End Service Area -->
               <!-- Start Best Service -->
-            <div class="brook-service-area bg_color--10">
+            <div class="brook-service-area bg_color--10" id="why">
                 <div class="row row--0 align-items-center">
                     <div class="col-lg-12 col-xl-6">
-                        <div class="bext-service thumb">
-                            <img src="{{asset('theme/img/about/about-6.jpg')}}" alt="images">
+                        <div class="bext-service thumb wow move-up">
+                            <img src="{{asset('uploads/pexels-rdne-7947646.jpg')}}" alt="images">
                         </div>
                     </div>
                     <div class="col-lg-12 col-xl-6">
                         <div class="bext-service plr--190 plr_lg--50 plr_lp--40 plr_md--50 plr_sm--30 mt_lg--40 mb_lg--40 mt_md--40 mb_md--40 mt_sm--40 mb_sm--40">
                             <div class="content">
                                 <div class="brook-section-title text-start">
-                                    <h3 class="heading heading-h3 font-large">Why Work With Us</h3>
+                                    <h3 class="heading heading-h3 font-large wow move-up navy theme-heading">Why Work With Us</h3>
                                     <div class="bkseparator--25"></div>
                                     <div class="title-separator w--80 color-red"></div>
                                 </div>
                                 <div class="bkseparator--40"></div>
-                                <h6 class="heading heading-h6 font-16 line-height-1-88 font-medium body-color">
+                                <h6 class="heading heading-h6 font-16 line-height-1-88 font-medium body-color wow move-up">
                                  <strong>Sharp minds • Smooth systems • Serious results.</strong><br>
                                  Plan & Focus brings to your table<br>
                                  ✔️ Entrepreneurial thinking—we approach every brief like it’s our own.<br>
@@ -282,10 +282,10 @@
                                  ✔️ Smart systems—our process is built to scale without losing finesse.<br>
                                 </h6>
                                 <div class="bkseparator--60 bkseparator_lg--30 bkseparator_md--20 bkseparator_sm--20"></div>
-                                <div class="brook-btn">
-                                    <a class="brook-btn bk-btn-red btn-sd-size btn-rounded space-between" href="#">Learn
-                                        More</a>
-                                </div>
+                                    <div class="box-btn wow move-up">
+                                          <a class="brook-btn red-color-5 btn-xs-size btn-rounded space-between" href="#">Learn
+                                             More</a>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -303,7 +303,7 @@
                         <div class="number-speaks">
                            <div class="content wow move-up">
                               <h3 class="theme-color">NUMBER SPEAKS</h3>
-                              <h2 class="signifier-200-font">We always ready <br> for a <span class="secondary-color">challenge.</span></h2>
+                              <h2 class="signifier-200-font navy theme-heading">We always ready <br> for a <span class="secondary-color"><strong>challenge.</strong></span></h2>
                               <a class="bk-btn theme-btn" href="#">Learn More</a>
                            </div>
                         </div>

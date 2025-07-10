@@ -21,6 +21,8 @@
       <!-- Font Awesome CDN -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-y1N8lZy+Xz+O7zlmS6XK1rBnX0V8ZsYF1Q1D4JEVVTVS4bPln2Xe5AxDprmJGcOrXL1KXrg+JY7rV+vHpXW1/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+      <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+
    </head>
    <body class="template-color-1 template-font-2">
       <!--[if lte IE 9]>
@@ -48,7 +50,7 @@
                         <div class="header-left flex-20">
                            <div class="logo">
                               <a href="{{url('/')}}">
-                              <img src="{{asset('uploads/logo.svg')}}" alt="Brook Images">
+                              <img src="{{asset('uploads/logo-white.svg')}}" alt="Brook Images">
                               </a>
                            </div>
                         </div>
@@ -56,24 +58,16 @@
                         <div class="header-flex-right flex-80">
                            <div class="mainmenu-wrapper have-not-flex d-none d-lg-block">
                               <nav class="page_nav">
+                             
+
                                  <ul class="mainmenu">
-                                    <li class="lavel-1 ">
-                                       <a href="#home"><span class="signifier-200-menu">Home</span></a>
-                                    </li>
-                                     <li class="lavel-1 ">
-                                       <a href="#about-us"><span class="signifier-200-menu">About Us</span></a>
-                                    </li>
-                                    <li class="lavel-1 ">
-                                       <a href="#people"><span class="signifier-200-menu">Services</span></a>
-                                    </li>
-                                    <li class="lavel-1">
-                                       <a href="#what-we-do"><span class="signifier-200-menu">Why Work With Us</span></a>
-                                    </li>
-                                    
-                                    <li class="lavel-1 ">
-                                       <a href="#contact"><span class="signifier-200-menu">Contact</span></a>
-                                    </li>
+                                    <li class="lavel-1"><a href="#home"><span class="signifier-200-menu">Home</span></a></li>
+                                    <li class="lavel-1"><a href="#about"><span class="signifier-200-menu">About Us</span></a></li>
+                                    <li class="lavel-1"><a href="#services"><span class="signifier-200-menu">Services</span></a></li>
+                                    <li class="lavel-1"><a href="#why"><span class="signifier-200-menu">Why Work With Us</span></a></li>
+                                    <li class="lavel-1"><a href="#contact"><span class="signifier-200-menu">Contact</span></a></li>
                                  </ul>
+
                               </nav>
                            </div>
                            <!-- Header Right -->
@@ -212,5 +206,42 @@
       <script src="{{asset('theme/js/revolution.extension.min.js')}}"></script>
       <script src="{{asset('theme/js/main.js')}}"></script>
       <script src="{{asset('theme/js/revoulation.js')}}"></script>
+      {{--  --}}
+
+     <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".mainmenu .lavel-1");
+            const sections = document.querySelectorAll("section[id]");
+
+            // Handle click
+            navLinks.forEach(link => {
+               link.addEventListener("click", function () {
+               navLinks.forEach(item => item.classList.remove("active"));
+               this.classList.add("active");
+               });
+            });
+
+            // Handle scroll
+            window.addEventListener("scroll", function () {
+               let scrollPos = window.scrollY + 200; // Adjust this offset if needed
+               sections.forEach(section => {
+               const top = section.offsetTop;
+               const height = section.offsetHeight;
+               const id = section.getAttribute("id");
+
+               if (scrollPos >= top && scrollPos < top + height) {
+                  navLinks.forEach(link => {
+                     link.classList.remove("active");
+                     if (link.querySelector("a").getAttribute("href") === "#" + id) {
+                     link.classList.add("active");
+                     }
+                  });
+               }
+               });
+            });
+         });
+      </script>
+
+         {{--  --}}
    </body>
 </html>

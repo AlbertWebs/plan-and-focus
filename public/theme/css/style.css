@@ -203,7 +203,8 @@ button,
 input,
 select,
 textarea {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  /*font-family: 'Kanit', sans-serif !important; */
+  font-family: 'Kanit', sans-serif !important;
 
 }
 
@@ -543,7 +544,8 @@ body {
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  /*font-family: 'Kanit', sans-serif !important; */
+  font-family: 'Kanit', sans-serif !important;
   color: #333333;
   font-weight: 400;
 }
@@ -593,7 +595,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: 'Kanit', sans-serif !important; */
+  font-family: 'Kanit', sans-serif !important;
   line-height: 1.3;
   color: #222222;
 }
@@ -1073,8 +1076,9 @@ Animation Css
 }
 
 .secondary-color {
-  color: #FCB72B;
+  color: #FFDA00;
 }
+
 
 .creative-color {
   color: #FE378C;
@@ -1149,15 +1153,19 @@ Animation Css
 }
 
 .secondary-font {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'Kanit', sans-serif !important;
 }
 
 .primary-font {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  /*font-family: 'Kanit', sans-serif !important; */
+  font-family: 'Kanit', sans-serif !important;
 }
 
 .heading-font {
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: 'Kanit', sans-serif !important; */
+  font-family: 'Kanit', sans-serif !important;
+
 }
 
 .playfair-font {
@@ -10236,11 +10244,13 @@ Padding Top Bottom
 
 /* Font specialized */
 .body-font {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  /*font-family: 'Kanit', sans-serif !important; */
+  font-family: 'Kanit', sans-serif !important;
 }
 
 .heading-font {
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: 'Kanit', sans-serif !important; */
+  font-family: 'Kanit', sans-serif !important;
 }
 
 /* Height and width */
@@ -10988,7 +10998,7 @@ button.bk-btn {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 a.bk-btn.theme-btn,
 button.bk-btn.theme-btn {
@@ -11018,7 +11028,7 @@ button.brook-btn {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
   font-weight: 600;
   letter-spacing: 0em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -11102,10 +11112,48 @@ button.brook-btn.bk-btn-red {
   background: #F0263F;
  
 }
-a.brook-btn.red-color-5,
-button.brook-btn.red-color-5 {
-  background: #FFDA00;
-   border:3px solid #2B3990; 
+.brook-btn.red-color-5 {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #2B3990; /* Text color */
+  background-color: #FFDA00; /* Button fill */
+  border: none;
+  z-index: 1;
+  border-radius: 30px; /* Rounded button */
+}
+
+.brook-btn.red-color-5::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(to right, #FFDA00, #00AEEF);
+  z-index: -1;
+  border-radius: 10px;
+}
+.brook-btn.red-color-5::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.brook-btn.red-color-5:hover::after {
+  width: 200%;
+  height: 500%;
+  opacity: 0;
 }
 a.brook-btn.color-green,
 button.brook-btn.color-green {
@@ -11282,7 +11330,7 @@ a.moredetails-btn.yellow-color-2:hover {
   color: #222222;
 }
 .view-more-btn.headingfont a span {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .view-more-btn.font-18 a {
   font-size: 18px;
@@ -11313,7 +11361,7 @@ a.moredetails-btn.yellow-color-2:hover {
   margin-left: 14px;
   color: #FCB72B;
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .view-more-btn a span.btn-arrow::before {
   content: "";
@@ -11625,7 +11673,7 @@ a.moredetails-btn.yellow-color-2:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.43;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   margin-bottom: 39px;
 }
 @media only screen and (max-width: 767px) {
@@ -11673,7 +11721,7 @@ a.moredetails-btn.yellow-color-2:hover {
   line-height: 1.32;
   font-weight: 700;
   color: #222222;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .section-title.normal-text h2 {
   font-weight: 400;
@@ -11997,7 +12045,7 @@ Creative Agency Section Title
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   white-space: nowrap;
   line-height: 1.2;
 }
@@ -12120,12 +12168,12 @@ Creative Agency Section Title
   line-height: 1.38;
   margin-bottom: 18px;
   color: #222222;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
 }
 .service.service--1 .content p {
   color: #333;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   letter-spacing: 0em;
   line-height: 1.32;
   font-size: 16px;
@@ -12218,7 +12266,7 @@ Creative Agency Section Title
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.23;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .service.service--3 .content h3 a {
   color: #222222;
@@ -12232,7 +12280,7 @@ Creative Agency Section Title
   letter-spacing: 0em;
   line-height: 1.32;
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   color: #333333;
 }
 .service.service--3:hover .thumb a img {
@@ -12609,7 +12657,7 @@ Counterup Area
   line-height: 1.43;
   margin-bottom: 0;
   word-wrap: break-word;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .number-speaks .content h2 {
   font-size: 48px;
@@ -12636,7 +12684,7 @@ Counterup Area
   font-size: 70px;
   font-weight: 700;
   line-height: 0.9;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 33.33333%;
   flex: 0 0 33.33333%;
@@ -12655,12 +12703,12 @@ Counterup Area
   line-height: 1.39;
   margin-bottom: 0;
   color: #222222;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
 }
 .number-wrap .content p {
   margin-top: 20px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   line-height: 1.32;
   font-size: 16px;
   margin-bottom: 0;
@@ -12733,7 +12781,7 @@ Counterup Area
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.43;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .team-heading .heading-right button {
   padding: 0;
@@ -12742,7 +12790,7 @@ Counterup Area
   font-weight: 600;
   font-size: 14px;
   color: #222;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .team-heading .heading-right button i {
   padding-left: 10px;
@@ -12920,13 +12968,13 @@ Counterup Area
   margin-bottom: 4px;
   color: #222222;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .team.team_style--1 .info span {
   letter-spacing: 0em;
   line-height: 1.32;
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   color: #333;
 }
 .team.team_style--1:hover .image-wrap .thumb .overlay {
@@ -13043,7 +13091,7 @@ Counterup Area
   line-height: 1.388;
   margin-bottom: 6px;
   color: #fff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .team.team__style--2 .thumb .team-info .info span {
   color: hsla(0deg, 0%, 100%, 0.5);
@@ -13127,7 +13175,7 @@ Counterup Area
   font-size: 18px;
   line-height: 1.388;
   margin-bottom: 6px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .team.team__style--3 .team-info .info span {
   font-weight: 500;
@@ -13187,7 +13235,7 @@ Counterup Area
   line-height: 1.4;
   margin-bottom: 2px;
   color: #222222;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .team.team_style--4 .inner .content-body .position {
   font-size: 14px;
@@ -13600,7 +13648,7 @@ Blog Default Style
   line-height: 1.56;
   margin-bottom: 0;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   margin: 0 0 18px;
 }
 .blog .blog-content .content h3.the-title a {
@@ -13756,7 +13804,7 @@ Blog Default Style
   line-height: 1.375;
   margin-bottom: 0;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   margin: 0 0 18px;
 }
 .blog-style--1 .blog-content .content h3.the-title a {
@@ -13767,7 +13815,7 @@ Blog Default Style
   line-height: 1.12;
   margin-bottom: 0;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .blog-style--1 .blog-content .content h6.post-quote-by a {
   color: #fff;
@@ -13799,7 +13847,7 @@ Blog Default Style
   font-weight: 700;
   font-size: 24px;
   color: #222222;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .address-inner .address p {
   line-height: 1.94;
@@ -13807,7 +13855,7 @@ Blog Default Style
   margin-bottom: 0;
   font-size: 16px;
   color: #333333;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .address-inner .address p a {
   color: #333333;
@@ -13817,7 +13865,7 @@ Blog Default Style
   padding: 2px 0;
   overflow: hidden;
   z-index: 1;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   display: inline-block;
   line-height: 16px;
 }
@@ -13962,7 +14010,7 @@ Contact Form Style 01
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -webkit-transition: all 0.3s cubic-bezier(1, 0.03, 0, 0.99);
   transition: all 0.3s cubic-bezier(1, 0.03, 0, 0.99);
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   font-size: 16px;
   font-weight: 700;
 }
@@ -13975,7 +14023,7 @@ Contact Form Style 01
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -webkit-transition: all 0.3s cubic-bezier(1, 0.03, 0, 0.99);
   transition: all 0.3s cubic-bezier(1, 0.03, 0, 0.99);
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   font-size: 16px;
   font-weight: 700;
   padding-left: 0;
@@ -14017,7 +14065,7 @@ Contact Form Style 01
   color: #333333;
   font-weight: 700;
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 @media only screen and (max-width: 767px) {
   .form-style--1 .form-action .form-description {
@@ -14043,7 +14091,7 @@ Contact Form Style 01
   cursor: pointer;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   color: #ffffff;
   border-color: #009EE2;
   background-color: #009EE2;
@@ -14079,7 +14127,7 @@ Contact Form Style 01
   background-color: #009EE2;
   font-size: 14px;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   border-radius: 6px;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -14402,7 +14450,7 @@ Contact Form Style 01
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   white-space: nowrap;
   line-height: 1.2;
 }
@@ -14571,7 +14619,7 @@ Contact Form Style 01
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
   font-size: 14px;
 }
@@ -15283,7 +15331,7 @@ Contact Form Style 01
   right: auto;
 }
 .social-icon.social-text.second-font li a {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .social-icon.tooltip-layout.text-dark li a {
   color: #333333;
@@ -15356,7 +15404,7 @@ Contact Form Style 01
   z-index: 1000001;
 }
 .social-icon.tooltip-layout li a[class*=hint--][aria-label]:after {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
   line-height: 1.23;
   content: attr(aria-label);
@@ -15588,7 +15636,7 @@ a[class*=hint--]:before {
   z-index: 1000001;
 }
 a[class*=hint--][aria-label]:after {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
   line-height: 1.23;
   content: attr(aria-label);
@@ -16499,14 +16547,14 @@ a:hover.hint--bottom::after {
   font-size: 18px;
   margin-bottom: 14px;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   line-height: 1.23;
 }
 .carousle-slider .content p {
   line-height: 1.58;
   font-size: 14px;
   font-weight: 500;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   color: #333333;
   margin: 0;
 }
@@ -16638,7 +16686,7 @@ Countdown Area
   bottom: -31px;
   font-size: 14px !important;
   color: #999;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 
 .time_circles > div > span {
@@ -17049,7 +17097,7 @@ Progress Charts
   border-radius: 50%;
   text-align: center;
   z-index: 3;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .bk-gradation .item-grid .content {
   position: relative;
@@ -17262,7 +17310,7 @@ Pricing PLans
 .ht-pricing-list-view thead tr th.pricing-header .heading-h4 {
   font-size: 24px;
   color: #222222;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.23;
@@ -17271,7 +17319,7 @@ Pricing PLans
 .ht-pricing-list-view thead tr th.pricing-header .heading-h6 {
   font-size: 14px;
   color: #222222;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.23;
@@ -18136,14 +18184,14 @@ Testimonial Area
   margin-bottom: 6px;
   color: #222222;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .testimonial_style--1 .content .testimonial-info .clint-info span {
   color: #333333;
   font-weight: 500;
   line-height: 1.58;
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .testimonial_style--1 .content .testimonial-quote {
   padding: 2px 5px 0 0;
@@ -18339,14 +18387,14 @@ Testimonial Area
   font-size: 18px;
   line-height: 1.388;
   margin-bottom: 4px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .testimonial_style--2 .content .testimonial-info .clint-info span {
   font-weight: 500;
   letter-spacing: 0em;
   line-height: 1.58;
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .testimonial_style--2 .content .testimonial-info .testimonial-quote {
   position: absolute;
@@ -18463,7 +18511,7 @@ Testimonial Area
   font-weight: 700;
   display: inline-block;
   margin-bottom: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .testimonial-nav-content .testimonial-nav .content .testimonial-info .clint-info span {
   font-size: 15px;
@@ -18476,7 +18524,7 @@ Testimonial Area
   font-size: 30px;
   line-height: 1.5;
   font-style: normal;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   color: #222222;
 }
 @media only screen and (max-width: 767px) {
@@ -18490,7 +18538,7 @@ Testimonial Area
   font-weight: 700;
   display: inline-block;
   margin-bottom: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .testimonial-nav-content.testimonial-content--2 .testimonial-nav .content .testimonial-info .clint-info span {
   font-size: 15px;
@@ -18560,7 +18608,7 @@ Testimonial Area
   font-size: 18px;
   line-height: 1.388;
   margin-bottom: 4px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   color: #ffffff;
 }
 .testimonanial-style--3 .testimonial-info .clint-info span {
@@ -18568,7 +18616,7 @@ Testimonial Area
   letter-spacing: 0em;
   line-height: 1.58;
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   color: #ffffff;
 }
 
@@ -18621,14 +18669,14 @@ Testimonial Area
   margin-bottom: 6px;
   color: #fff;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .testimonial_style--4 .content .testimonial-info .clint-info span {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
   line-height: 1.58;
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 
 .testimonial_style--5 .content {
@@ -18662,14 +18710,14 @@ Testimonial Area
   margin-bottom: 6px;
   color: #fff;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .testimonial_style--5 .content .testimonial-info .clint-info span {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
   line-height: 1.58;
   font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -19370,7 +19418,7 @@ Breadcaump Area
   font-weight: 600;
   line-height: 1.41;
   font-size: 32px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .breadcaump-area.breadcaump-title-bar .breadcaump-inner .heading.heading-h1 {
   font-weight: 600;
@@ -19410,7 +19458,7 @@ Breadcaump Area
   z-index: 1;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .breadcaump-area.breadcaump-title-bar .breadcaump-inner .breadcrumb-insite ul.core-breadcaump li a::after {
   content: "";
@@ -19827,7 +19875,7 @@ Breadcaump Area
   color: #ffffff;
   border-color: #009EE2;
   background-color: #009EE2;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   height: 55px;
   line-height: 53px;
   outline: none;
@@ -20013,7 +20061,7 @@ Start Dropdown Menu
   border: 0 solid transparent;
   border-bottom: 1px solid #444;
   color: #ffffff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .mega__width--fullscreen .mega__list li a span {
   position: relative;
@@ -20160,7 +20208,7 @@ Typography Area
 
 .heading {
   color: #222222;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.23;
@@ -20170,7 +20218,7 @@ Typography Area
   letter-spacing: 3px;
 }
 .heading.heading-font {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .heading.bk-hover a {
   color: #222222;
@@ -20582,7 +20630,7 @@ p.bk_pra {
   font-weight: 500;
   line-height: 1.58;
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 @media only screen and (max-width: 767px) {
   p.bk_pra br {
@@ -20590,7 +20638,7 @@ p.bk_pra {
   }
 }
 p.bk_pra.heading-font {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   line-height: 1.32;
   font-size: 16px;
   color: #333333;
@@ -20641,7 +20689,7 @@ p.bk_pra.secondary-font {
   font-family: "Montserrat", sans-serif;
 }
 p.bk_pra.heading-font2 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 p.bk_pra.font-blod {
   font-weight: 700;
@@ -20744,7 +20792,7 @@ p.bk_pra.line-height-2-22 {
   font-weight: 600;
   line-height: 1.625;
   color: #222222;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-style: normal;
 }
 
@@ -20863,7 +20911,7 @@ List Area
   font-weight: 500;
   letter-spacing: 0em;
   line-height: 1.38;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .bk-list--2 .list-header.with-number--body h6.heading {
   font-size: 16px;
@@ -20871,7 +20919,7 @@ List Area
   letter-spacing: 0em;
   line-height: 1.38;
   color: #333333;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 
 /* =====================
@@ -21560,7 +21608,7 @@ Dividers Area
   font-weight: 500;
   line-height: 1.58;
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .message-box.bg_cat--1 {
   background: #eee;
@@ -21618,7 +21666,7 @@ Dividers Area
   padding: 0;
   font-weight: 600;
   border: 0 none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   -webkit-appearance: none;
   display: block;
   background: #f7f7f7;
@@ -21652,7 +21700,7 @@ Dividers Area
   letter-spacing: 0em;
   line-height: 1.58;
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   border: 0 none;
   -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
@@ -21679,7 +21727,7 @@ Dividers Area
   padding: 0;
   font-weight: 600;
   border: 0 none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   -webkit-appearance: none;
   display: block;
   position: relative;
@@ -21716,7 +21764,7 @@ Dividers Area
   font-weight: 500;
   line-height: 1.58;
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   border: 0 none;
   -webkit-box-shadow: inherit;
           box-shadow: inherit;
@@ -22532,7 +22580,7 @@ body.loaded .page-loading {
   margin: 0;
   font-weight: 600;
   letter-spacing: 0em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 @media only screen and (max-width: 767px) {
   .portfolio.portfolio_style--1 .port-overlay-info .hover-action h3.post-overlay-title {
@@ -23441,7 +23489,7 @@ body.loaded .page-loading {
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .portfolio-cation .port-overlay-info .hover-action .post-overlay-title a {
   color: #222222;
@@ -23499,7 +23547,7 @@ body.loaded .page-loading {
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .messonry-button button span.filter-counter::before {
   position: absolute;
@@ -24301,7 +24349,7 @@ Has Center
   color: rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   font-weight: 700;
   display: inline-block;
 }
@@ -25731,7 +25779,7 @@ Blog Main Quote
   margin-bottom: 20px;
   padding-bottom: 11px;
   border-bottom: 1px solid #eee;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
   line-height: 1.23;
   color: #222222;
@@ -25909,7 +25957,7 @@ Shop Sidebar
   margin-bottom: 20px;
   padding-bottom: 11px;
   border-bottom: 1px solid #eee;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
   line-height: 1.23;
   color: #222222;
@@ -27825,7 +27873,7 @@ Main Components
   font-size: 100px;
   line-height: 1.06;
   margin-bottom: 77px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 @media only screen and (max-width: 767px) {
   .gradient-wrapper .post-info .inner .main-info .main-info-inner h6 {
@@ -27844,7 +27892,7 @@ Main Components
   line-height: 1.13;
   margin-bottom: 140px;
   text-align: left;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 @media only screen and (max-width: 767px) {
   .gradient-wrapper .post-info .inner .main-info .main-info-inner h2 {
@@ -27860,7 +27908,7 @@ Main Components
   font-size: 18px;
   font-weight: 700;
   color: #222;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .gradient-wrapper .post-info .inner .main-info .main-info-inner a.post-read-more .btn-icon {
   position: relative;
@@ -27950,7 +27998,7 @@ Main Components
   left: 40px;
   font-size: 18px;
   color: #222;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 @media only screen and (max-width: 767px) {
   .gradient-wrapper .post-info .inner .post-categories {
@@ -28313,7 +28361,7 @@ Main Components
   font-weight: 600;
   line-height: 1.18;
   font-size: 16px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   color: #009EE2;
   padding-top: 41px;
   padding-bottom: 41px;
@@ -29431,7 +29479,7 @@ header.br_header.header-default.header-fixed {
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 21px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
   margin: 0 0 18px;
 }
@@ -30316,7 +30364,7 @@ Header Font Family
   line-height: 1.18;
   font-size: 18px;
   color: #222222;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -30450,7 +30498,7 @@ Button Hire
   color: #222;
   font-size: 18px;
   font-weight: 700;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .hire-on-top-button:hover .the-arrow {
   color: #222;
@@ -30637,7 +30685,7 @@ Button Hire
 }
 .single-portfolio-slide .inner .info h3.heading {
   margin-bottom: 18px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .single-portfolio-slide .inner .info h3.heading a {
   color: #ffffff;
@@ -30648,7 +30696,7 @@ Button Hire
 .single-portfolio-slide .inner .info .category a {
   font-size: 16px;
   color: #999;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .single-portfolio-slide .inner .info .slide-btn a {
   -webkit-box-shadow: none;
@@ -31107,7 +31155,7 @@ Vertical Slider Portfolio
   z-index: 2;
   font-weight: 700;
   line-height: 1.38;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 .fullscreen-slider-wrapper .feature-wrapper .fullscreen-inner .post-character.style-1 {
   color: #b40720;
@@ -31147,7 +31195,7 @@ Vertical Slider Portfolio
   font-size: 18px;
   font-weight: 700;
   color: #222;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -31443,7 +31491,7 @@ Shop Slide Area
 .product .product-info .price span {
   display: inline-block;
   color: #333333;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .product .product-info .price span.new-price {
   color: #d5382c;
@@ -31600,7 +31648,7 @@ Shop Slide Area
   transform: translateX(-50%);
 }
 .product .product-thumbnail .product-action .action-list.tooltip-layout li a[class*=hint--][aria-label]:after {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-weight: 600;
   line-height: 1.23;
   content: attr(aria-label);
@@ -32030,7 +32078,7 @@ Prresentation Area
   text-transform: uppercase;
 }
 .presentation-slider-wrapper .presentation-inner .inner.about-inner .content h2 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   font-size: 48px;
   line-height: 1.11;
   word-wrap: break-word;
@@ -32047,7 +32095,7 @@ Prresentation Area
   }
 }
 .presentation-slider-wrapper .presentation-inner .inner.about-inner .content p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   font-weight: 700;
 }
 .presentation-slider-wrapper .presentation-inner .inner.about-service .row {
@@ -32163,7 +32211,7 @@ Prresentation Area
   border-bottom-color: rgba(0, 0, 0, 0);
   margin-bottom: 19px;
   padding-bottom: 13px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .footer-widget .footer-menu ul.ft-menu-list {
   list-style: none;
@@ -32182,7 +32230,7 @@ Prresentation Area
   font-weight: 500;
   letter-spacing: 0em;
   line-height: 2;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -32199,7 +32247,7 @@ Prresentation Area
   font-size: 14px;
   font-weight: 500;
   line-height: 2;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   color: #ffffff;
 }
 .footer-widget .footer-address p a {
@@ -32238,7 +32286,7 @@ Prresentation Area
   color: #fff;
 }
 .footer-widget.text-var--2 .footer-menu ul.ft-menu-list li a {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0em;
@@ -32247,12 +32295,12 @@ Prresentation Area
 .footer-widget.text-var--2 .footer-address p {
   font-size: 14px;
   font-weight: 500;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .footer-widget.text-var--2 .footer-address p a {
   font-size: 14px;
   font-weight: 500;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 
 .footer-widget.news-bulletin .heading {
@@ -32353,18 +32401,18 @@ Prresentation Area
   font-size: 14px;
   font-weight: 500;
   line-height: 2;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
   color: #ffffff;
 }
 .copyright .copyright-right p a {
   color: #fff;
 }
 .copyright.text-var-2 .copyright-left ul.bk-copyright-menu li a {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-size: 14px;
 }
 .copyright.text-var-2 .copyright-right p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 .copyright.copyright--2 .copyright-left p {
   margin: 0;
@@ -51685,50 +51733,50 @@ body.template-font-1 .h3,
 body.template-font-1 .h4,
 body.template-font-1 .h5,
 body.template-font-1 .h6 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .heading.font-reenie {
   font-family: "Reenie Beanie", cursive;
 }
 body.template-font-1 .mini-cart .shopping-cart .shop-inner ul.product-list li .content .inner h4 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .mega__width--fullscreen .mega__list li a span {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .mainmenu-wrapper .page_nav ul.mainmenu li.lavel-1 > a span {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .footer-widget .footer-menu ul.ft-menu-list li a {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .copyright ul.bk-copyright-menu li a {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .copyright .copyright-right p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .footer-widget .footer-address p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .form-style--1 .input-box input,
 body.template-font-1 .form-style--1 .input-box textarea {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .testimonial_style--1 .content p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .testimonial_style--1 .content .testimonial-info .clint-info span {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .service.service--1 .content p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .service.service--2 .content h4 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-1 .service.service--2 .content p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
 }
 
 body.template-font-2 .heading,
@@ -51744,50 +51792,50 @@ body.template-font-2 .h3,
 body.template-font-2 .h4,
 body.template-font-2 .h5,
 body.template-font-2 .h6 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .heading.font-reenie {
   font-family: "Reenie Beanie", cursive;
 }
 body.template-font-2 .mini-cart .shopping-cart .shop-inner ul.product-list li .content .inner h4 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .mega__width--fullscreen .mega__list li a span {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .mainmenu-wrapper .page_nav ul.mainmenu li.lavel-1 > a span {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .footer-widget .footer-menu ul.ft-menu-list li a {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .copyright ul.bk-copyright-menu li a {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .copyright .copyright-right p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .footer-widget .footer-address p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .form-style--1 .input-box input,
 body.template-font-2 .form-style--1 .input-box textarea {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .testimonial_style--1 .content p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .testimonial_style--1 .content .testimonial-info .clint-info span {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .service.service--1 .content p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .service.service--2 .content h4 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 body.template-font-2 .service.service--2 .content p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 
 body.template-font-3 .heading,
@@ -52189,7 +52237,7 @@ body.template-font-8 .service.service--2 .content p {
 }
 .pv-service-wrapper .single-grid .inner h4 {
   font-size: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   line-height: 1.4;
   margin-bottom: 0;
   word-wrap: break-word;
@@ -52637,13 +52685,13 @@ h3.heading-h3 br,
   }
 }
 .signifier-200-menu {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+  font-family: 'Kanit', sans-serif !important;
   font-weight:200px !important;
   font-size:16px !important;
 
 }
 .signifier-200 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-style: normal !important;
   font-weight: 200 !important;
   color: rgb(0, 0, 0) !important;
@@ -52652,7 +52700,7 @@ h3.heading-h3 br,
 }
 
 .signifier-200-font {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ font-family: 'Kanit', sans-serif !important;
   font-style: normal !important;
   font-weight: 200 !important;
   color: rgb(0, 0, 0) !important;
@@ -52709,4 +52757,26 @@ h3.heading-h3 br,
     font-size: 22px !important;
     line-height: 30px !important;
   }
+}
+.navy{
+  color: #2B3990 !important;
+}
+
+.mainmenu .lavel-1 .signifier-200-menu {
+  color: #fff; /* default color */
+  transition: color 0.3s ease;
+}
+
+.mainmenu .lavel-1.active .signifier-200-menu {
+  color: #FFDA00; /* highlight color */
+}
+
+
+.theme-heading{
+  font-weight: 900 !important;
+  font-size:50px !important;
+  font-family: 'Kanit', sans-serif !important;
+}
+.new-font{
+  font-family: 'Kanit', sans-serif !important;
 }

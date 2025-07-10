@@ -1,5 +1,5 @@
   <!-- START REVOLUTION SLIDER -->
-        <div class="slider-revoluation">
+        <div class="slider-revoluation" id="home">
             <div id="rev_slider_15_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="home-service"
                 data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
                 <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
