@@ -276,10 +276,12 @@
                                 <h6 class="heading heading-h6 font-16 line-height-1-88 font-medium body-color wow move-up">
                                  <strong>Sharp minds • Smooth systems • Serious results.</strong><br>
                                  Plan & Focus brings to your table<br>
-                                 ✔️ Entrepreneurial thinking—we approach every brief like it’s our own.<br>
-                                 ✔️ Expert-led teams—you get real specialists, not just account managers.<br>
-                                 ✔️ Integrated delivery—brand, creative, media, and PR all under one roof.<br>
-                                 ✔️ Smart systems—our process is built to scale without losing finesse.<br>
+                                 <ul>
+                                 <li><strong>Entrepreneurial thinking</strong> —we approach every brief like it’s our own.</li>
+                                 <li><strong>Expert-led teams</strong> —you get real specialists, not just account managers.</li>
+                                 <li><strong>Integrated delivery</strong> —brand, creative, media, and PR all under one roof.</li>
+                                 <li><strong>Smart systems</strong> —our process is built to scale without losing finesse.</li>
+                                 </ul>
                                 </h6>
                                 <div class="bkseparator--60 bkseparator_lg--30 bkseparator_md--20 bkseparator_sm--20"></div>
                                     <div class="box-btn wow move-up">
