@@ -52780,3 +52780,6 @@ h3.heading-h3 br,
 .new-font{
   font-family: 'Kanit', sans-serif !important;
 }
+.p-service{
+  min-height:70px
+}

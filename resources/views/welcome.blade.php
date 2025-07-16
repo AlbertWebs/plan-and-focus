@@ -199,7 +199,7 @@
                            </div>
                            <div class="content">
                               <h4>Marketing and Communications</h4>
-                              <p>Strategic public relations and media management to keep your brand in the news for all the right reasons
+                              <p class="p-service">Strategic public relations and media management to keep your brand in the news for all the right reasons
                               </p>
                               <a class="service-btn" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
                               
@@ -215,7 +215,7 @@
                            </div>
                            <div class="content">
                               <h4>Public Media Relations</h4>
-                              <p>We empower your business with digital marketing to increase your online presense, helping to grow your brand and support yur sales efforts
+                              <p class="p-service">We empower your business with digital marketing to increase your online presense, helping to grow your brand and support yur sales efforts
                               </p>
                               <a class="service-btn" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
                            </div>
@@ -230,7 +230,7 @@
                            </div>
                            <div class="content">
                               <h4>Project Management</h4>
-                              <p>We help manage projects from start ti excecution, ensuring quality work on time and within budget
+                              <p class="p-service">We help manage projects from start ti excecution, ensuring quality work on time and within budget
                               </p>
                               <a class="service-btn" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
                            </div>
