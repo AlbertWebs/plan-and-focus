@@ -41,21 +41,32 @@
                                     <img src="{{ asset('uploads/10.jpg') }}" class="d-block w-100" alt="Service Image 1">
                                  </div>
                                  <div class="carousel-item">
-                                    <img src="{{ asset('uploads/10.jpg') }}" class="d-block w-100" alt="Service Image 2">
+                                    <img src="{{ asset('uploads/pexels-soumithsoman-4777979.jpg') }}" class="d-block w-100" alt="Service Image 2">
                                  </div>
                                  <div class="carousel-item">
-                                    <img src="{{ asset('uploads/10.jpg') }}" class="d-block w-100" alt="Service Image 3">
+                                    <img src="{{ asset('uploads/pexels-rdne-7414284.jpg') }}" class="d-block w-100" alt="Service Image 3">
                                  </div>
+                                 <div class="carousel-item">
+                                    <img src="{{ asset('uploads/slide-1.jpg') }}" class="d-block w-100" alt="Service Image 3">
+                                 </div>
+                                 <div class="carousel-item">
+                                    <img src="{{ asset('uploads/slide-2.jpg') }}" class="d-block w-100" alt="Service Image 3">
+                                 </div>
+                                 <div class="carousel-item">
+                                    <img src="{{ asset('uploads/slide-3.jpg') }}" class="d-block w-100" alt="Service Image 3">
+                                 </div>
+
+                                 
                            </div>
                         </div>
                      </div>
 
                     {{--  --}}
                     <div class="col-lg-6 ptb-md--80 ptb-sm--80">
-                        <div class="service-content authenthic-service plr--170 plr_lg--70 plr_md--30 plr_sm--30">
+                        <div class="service-content authenthic-service plr--115 plr_lg--70 plr_md--30 plr_sm--30">
                             <h6 class="heading headin-h6 theme-color letter-spacing-3 theme-color">What we do</h6>
                             <div class="bkseparator--30"></div>
-                            <h3 class="heading heading-h1 heading-font line-height-1-5 cd-headline clip is-full-width move-up wow navy new-font">Marketing and Communications
+                            <h3 class="heading heading-h1 heading-font line-height-1-5 cd-headline clip is-full-width move-up wow navy new-font">Marketing and Communications<br>
                                 <span class="cd-words-wrapper theme-color">
                                     <b class="is-visible">TV, Radio, and Digital Advertising</b>
                                     <b>Integrated 360° Campaigns</b>
@@ -283,11 +294,12 @@
                                  <li><strong>Smart systems</strong> —our process is built to scale without losing finesse.</li>
                                  </ul>
                                 </h6>
-                                <div class="bkseparator--60 bkseparator_lg--30 bkseparator_md--20 bkseparator_sm--20"></div>
-                                    <div class="box-btn wow move-up">
+                                <div class="box-btn wow move-up">
                                           <a class="brook-btn red-color-5 btn-xs-size btn-rounded space-between" href="#">Learn
                                              More</a>
                                     </div>
+                                <div class="bkseparator--60 bkseparator_lg--30 bkseparator_md--20 bkseparator_sm--20"></div>
+                                    
                             </div>
                         </div>
                     </div>
@@ -344,76 +356,10 @@
      
        
             <!-- Start Blog Area -->
-            <div class="bk-blog-area mt--200">
-              
-               <div class="blog-wrapper pl--230 pr--230 pr_lp--100 pl_lp--100 pl_lg--100 pr_lg--100 pl_md--50 pr_md--50 pl_sm--30 pr_sm--30 section-pb-xl">
-                  <div class="row row--0 space_dec--250">
-                     <!-- Start Single Portfolio -->
-                     <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 wow move-up">
-                        <div class="blog blog-style--1">
-                           <div class="thumb">
-                              <a href="blog-details.html"><img src="{{asset('theme/img/blog/blog-1/blog-01.jpg')}}" alt="Blog Images"></a>
-                           </div>
-                           <div class="blog-content blog-position--bottom">
-                              <div class="content">
-                                 <div class="video-btn">
-                                    <a class="video-icon play__btn" href="https://www.youtube.com/watch?v=9No-FiEInLA"></a>
-                                 </div>
-                                 <ul class="meta">
-                                    <li>January 7, 2025</li>
-                                    <li><a href="#">Photography</a></li>
-                                 </ul>
-                                 <h3 class="the-title"><a href="blog-details.html">Career Tips For Emerging
-                                    Digital Agencies</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Portfolio -->
-                     <!-- Start Single Portfolio -->
-                     <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 wow move-up mt_sm--40">
-                        <div class="blog blog-style--1">
-                           <div class="thumb">
-                              <a href="blog-details.html"><img src="{{asset('theme/img/blog/blog-1/blog-02.jpg')}}" alt="Blog Images"></a>
-                           </div>
-                           <div class="blog-content blog-position--bottom">
-                              <div class="content">
-                                 <ul class="meta">
-                                    <li>January 7, 2025</li>
-                                    <li><a href="#">Photography</a></li>
-                                 </ul>
-                                 <h3 class="the-title"><a href="blog-details.html">Career Tips For Emerging
-                                    Digital Agencies</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Portfolio -->
-                     <!-- Start Single Portfolio -->
-                     <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 wow move-up mt_lg--40 mt_md--40 mt_sm--40">
-                        <div class="blog blog-style--1">
-                           <div class="thumb">
-                              <a href="blog-details.html"><img src="{{asset('theme/img/blog/blog-1/blog-03.jpg')}}" alt="Blog Images"></a>
-                           </div>
-                           <div class="blog-content blog-position--bottom">
-                              <div class="content">
-                                 <h3 class="the-title"><a href="blog-details.html">Career Tips For Emerging
-                                    Digital Agencies</a>
-                                 </h3>
-                                 <h6 class="post-quote-by"><a href="#">- Kasahara May</a></h6>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- End Single Portfolio -->
-                  </div>
-               </div>
-            </div>
+            {{-- @include('front.blog') --}}
             <!-- End Blog Area -->
             <!-- Start Contact Area -->
-            <div class="bk-contact-area section-pb-xl bg_color--1" id="contact">
+            <div class="bk-contact-area section-pb-xl section-pt-xl bg_color--10" id="contact">
                <div class="container">
                   <div class="row">
                      <!-- Start Address -->
