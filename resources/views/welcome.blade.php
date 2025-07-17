@@ -86,8 +86,9 @@
                 </div>
             </div>
 
+            @include('portfolio')
               <!-- Start Portfolio Area -->
-                <div class="brook-portfolio-area pt--100 rslide" data-background="#ae2883" id="services">
+                {{-- <div class="brook-portfolio-area pt--100 rslide" data-background="#ae2883" id="services">
                     <div class="container-fluid plr--100 plr_sm--30 plr_md--50">
                         <div class="row">
                             <div class="col-lg-12">
@@ -184,7 +185,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <!-- End Portfolio Area -->
 
           
