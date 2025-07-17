@@ -52792,3 +52792,41 @@ h3.heading-h3 br,
 .buzz {
   animation: buzz 5s linear infinite;
 }
+.capitalize{
+  text-transform:capitalize;
+}
+.w-600{
+  max-width :800px;
+  text-align:center;
+  margin:0 auto;
+}
+.theme-yellow{
+  color:#FFDA00 !important;
+}
+.thick{
+  font-weight:900 !important;
+}
+.animated-underline {
+  display: inline-block;
+  position: relative;
+  font-weight: 900 !important;
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background-color: #009EE2;
+  transition: width 0.6s ease-in-out;
+}
+
+.animated-underline.animate-border::after {
+  width: 100%;
+}
+.underline-blue{
+  border-bottom: 3px solid #009EE2;
+}
+

@@ -1,4 +1,5 @@
-  <!-- START REVOLUTION SLIDER -->
+<section id="home">
+<!-- START REVOLUTION SLIDER -->
         <div class="slider-revoluation" id="home">
             <div id="rev_slider_15_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="home-service"
                 data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
@@ -40,7 +41,7 @@
                                 data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":1000,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                style="z-index: 7; min-width: 900px; max-width: 900px; white-space: normal; word-wrap:break-word; font-size: 36px; line-height: 51px; font-weight: 900; color: #ffffff; letter-spacing: 0px;">
+                                style="z-index: 7; min-width: 900px; max-width: 900px; white-space: normal; word-wrap:break-word; font-size: 36px; line-height: 51px; font-weight: 900; color: #FFDA00; letter-spacing: 0px;">
                                 Bold Ideas • Smart Execution • Real Impact 
                              </div>
                         </li>
@@ -81,7 +82,7 @@
                                 data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":1000,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                style="z-index: 7; min-width: 900px; max-width: 900px; white-space: normal; word-wrap:break-word; font-size: 36px; line-height: 51px; font-weight: 900; color: #ffffff; letter-spacing: 0px;">
+                                style="z-index: 7; min-width: 900px; max-width: 900px; white-space: normal; word-wrap:break-word; font-size: 36px; line-height: 51px; font-weight: 900; color: #FFDA00; letter-spacing: 0px;">
                                 Bold Ideas • Smart Execution • Real Impact 
                              </div>
                         </li>
@@ -93,4 +94,5 @@
                 </div>
             </div>
         </div>
+</section>
         <!-- END REVOLUTION SLIDER -->

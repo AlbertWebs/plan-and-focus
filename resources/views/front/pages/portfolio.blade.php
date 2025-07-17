@@ -1,14 +1,15 @@
+<section  id="portfolio">
 <!-- Start Portfolio Area -->
-<div class="brook-portfolio-area pt--100 rslide" data-background="#ae2883" id="services">
+<div class="brook-portfolio-area pt--100 rslide" data-background="#ae2883" id="portfolio">
    <div class="bk-portfolio-area">
       <div class="container-fluid plr--100 plr_sm--30 plr_md--50">
         {{--  --}}
         <div class="row">
             <div class="col-lg-12">
                 <div class="brook-section-title mb--30 text-center">
-                    <h6 class="heading heading-h6 letter-spacing-3 signifier-200-font  wow move-up animate new-font"  style="color:#000000">FEATURED WORKS</h6>
+                    <h6 class="heading heading-h6 letter-spacing-3 signifier-200-font  wow move-up animate new-font theme-yellow"  style="font-weight:900 !important">FEATURED WORKS</h6>
                     <div class="space mb--45"></div>
-                    <h3 class="heading heading-h3 font-40 signifier-200 navy wow move-up animate theme-heading">Making <strong>Brands</strong> Relevant in Africa</h3>
+                    <h3 class="heading heading-h3 font-40 signifier-200 navy wow move-up animate theme-heading  w-600">Custom, Clever, and Creative<br> that Works.</h3>
                 </div>
             </div>
         </div>
@@ -97,3 +98,4 @@
    </div>
 </div>
 <!-- End Portfolio Area -->
+</section>

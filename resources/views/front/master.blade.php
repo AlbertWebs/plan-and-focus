@@ -7,8 +7,23 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Favicon -->
-      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-      <link rel="apple-touch-icon" href="img/icon.png">
+      <!-- Standard Favicon -->
+      <link rel="icon" type="image/png" href="{{asset('favicon/favicon.ico')}}">
+
+      <!-- ICO format for legacy browsers -->
+      <link rel="shortcut icon" href="{{asset('favicon/favicon.ico')}}" type="image/x-icon">
+
+      <!-- Apple Touch Icon (for iOS home screen bookmarks) -->
+      <link rel="apple-touch-icon" sizes="180x180" href="{{asset('favicon/favicon.ico')}}">
+
+      <!-- Android Chrome -->
+      <link rel="icon" type="image/png" sizes="192x192" href="{{asset('favicon/favicon.ico')}}">
+
+      <!-- Safari Pinned Tab (macOS) -->
+      <link rel="mask-icon" href="{{asset('favicon/favicon.ico')}}" color="#5bbad5">
+
+      <!-- Web Manifest (optional for PWA behavior) -->
+      <link rel="manifest" href="{{asset('favicon/site.webmanifest')}}">
       <!-- CSS
          ============================================ -->
       <link rel="stylesheet" href="{{asset('theme/css/bootstrap.min.css')}}">
@@ -65,6 +80,7 @@
                                     <li class="lavel-1"><a href="#about"><span class="signifier-200-menu">About Us</span></a></li>
                                     <li class="lavel-1"><a href="#services"><span class="signifier-200-menu">Services</span></a></li>
                                     <li class="lavel-1"><a href="#why"><span class="signifier-200-menu">Why Work With Us</span></a></li>
+                                    <li class="lavel-1"><a href="#portfolio"><span class="signifier-200-menu">Portfolio</span></a></li>
                                     <li class="lavel-1"><a href="#contact"><span class="signifier-200-menu">Contact</span></a></li>
                                  </ul>
 
@@ -208,37 +224,63 @@
       <script src="{{asset('theme/js/revoulation.js')}}"></script>
       {{--  --}}
 
-     <script>
-         document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll(".mainmenu .lavel-1");
-            const sections = document.querySelectorAll("section[id]");
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         const navItems = document.querySelectorAll(".mainmenu .lavel-1");
+         const navLinks = document.querySelectorAll(".mainmenu .lavel-1 a");
+         const sections = document.querySelectorAll("section[id]");
 
-            // Handle click
-            navLinks.forEach(link => {
-               link.addEventListener("click", function () {
-               navLinks.forEach(item => item.classList.remove("active"));
-               this.classList.add("active");
-               });
-            });
+         function setActiveNav() {
+            let scrollPos = window.scrollY + 200; // adjust if you have fixed/sticky header
 
-            // Handle scroll
-            window.addEventListener("scroll", function () {
-               let scrollPos = window.scrollY + 200; // Adjust this offset if needed
-               sections.forEach(section => {
-               const top = section.offsetTop;
-               const height = section.offsetHeight;
-               const id = section.getAttribute("id");
+            sections.forEach(section => {
+            const top = section.offsetTop;
+            const height = section.offsetHeight;
+            const id = section.getAttribute("id");
 
-               if (scrollPos >= top && scrollPos < top + height) {
-                  navLinks.forEach(link => {
-                     link.classList.remove("active");
-                     if (link.querySelector("a").getAttribute("href") === "#" + id) {
-                     link.classList.add("active");
-                     }
-                  });
+            if (scrollPos >= top && scrollPos < top + height) {
+               // Remove "active" from all items
+               navItems.forEach(item => item.classList.remove("active"));
+
+               // Add "active" to the current nav item
+               const activeLink = document.querySelector(`.mainmenu .lavel-1 a[href="#${id}"]`);
+               if (activeLink) {
+                  activeLink.parentElement.classList.add("active");
                }
-               });
+            }
             });
+         }
+
+         // Run on scroll
+         window.addEventListener("scroll", setActiveNav);
+
+         // Also run once on page load (in case user loads mid-scroll)
+         setActiveNav();
+
+         // Handle click
+         navLinks.forEach(link => {
+            link.addEventListener("click", function () {
+            navItems.forEach(item => item.classList.remove("active"));
+            this.parentElement.classList.add("active");
+            });
+         });
+      });
+   </script>
+
+
+
+
+     <script>
+         const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+               if (entry.isIntersecting) {
+               entry.target.classList.add('animate-border');
+               }
+            });
+         }, { threshold: 0.7 });
+
+         document.querySelectorAll('.animated-underline').forEach(el => {
+            observer.observe(el);
          });
       </script>
 
