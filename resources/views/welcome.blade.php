@@ -354,7 +354,7 @@
             <!-- End CounterUp Area -->
           
      
-       
+         
             <!-- Start Blog Area -->
             {{-- @include('front.blog') --}}
             <!-- End Blog Area -->
@@ -366,7 +366,7 @@
                      <div class="col-xl-3 col-lg-3 col-12">
                         <div class="address-inner">
                            <div class="address wow move-up">
-                              <h3 class="heading">Visit our studio at</h3>
+                              <h3 class="heading">Visit our offices at</h3>
                               <p>2005 Westlands Lane Apt. 896, Shop Plaza 10010, Nairobi</p>
                            </div>
                            <div class="address mt--60 mb--60 wow move-up">
@@ -419,8 +419,7 @@
                                  <div class="col-lg-12">
                                     <div class="form-action">
                                        <div class="form-description">
-                                          I’m available for commissions and collaborations, and i’m <br>
-                                          excited to hear from you about new projects
+                                         We’re open to questions and conversations, and we’re always happy to hear from you anytime.
                                        </div>
                                        <div class="form-submit">
                                           <input type="submit" value="Send message">
@@ -435,6 +434,29 @@
                </div>
             </div>
             <!-- End Contact Area -->
+            {{-- @include('services') --}}
+              <!-- Start Call To Action -->
+            <div class="brook-call-to-action bg_color--44 ptb--70">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-sm-7 col-12">
+                            <div class="call-content text-center text-sm-start">
+                                <h3 class="heading heading-h3 text-black">Start a New Project With Us ?</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-5 col-12">
+                            <div class="call-btn text-center text-sm-end mt_mobile--20">
+                               <a class="brook-btn bk-btn-white text-theme btn-sd-size btn-rounded buzz" href="tel:+254723014032">
+                                 Call Us <span class="fa fa-phone"></span>
+                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Call To Action -->
+
+       
          </main>
          <!--// Page Conttent -->
 @endsection
