@@ -28377,7 +28377,7 @@ Main Components
 .mainmenu-wrapper .page_nav ul.mainmenu li.lavel-1 > a span::after {
   content: "";
   width: 0;
-  height: 1px;
+  height: 2px;
   bottom: 0;
   position: absolute;
   left: auto;
@@ -28385,7 +28385,7 @@ Main Components
   z-index: -1;
   -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
   transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-  background: currentColor;
+  background: #009EE2;
 }
 .mainmenu-wrapper .page_nav ul.mainmenu li.lavel-1:hover > a span::after {
   width: 100%;
@@ -52830,3 +52830,7 @@ h3.heading-h3 br,
   border-bottom: 3px solid #009EE2;
 }
 
+.yellow-placeholder::placeholder {
+    color: #009EE2;
+    opacity: 1; /* Makes placeholder fully opaque */
+}

@@ -35,7 +35,7 @@
                                  <div class="col-lg-6">
                                     <div class="input-box">
                                        <span class="form-icon far fa-user navy"></span>
-                                       <input type="text" placeholder="Name *">
+                                       <input  type="text" placeholder="Name *">
                                     </div>
                                  </div>
                                  <div class="col-lg-6">

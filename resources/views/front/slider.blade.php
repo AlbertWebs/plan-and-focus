@@ -44,6 +44,25 @@
                                 style="z-index: 7; min-width: 900px; max-width: 900px; white-space: normal; word-wrap:break-word; font-size: 36px; line-height: 51px; font-weight: 900; color: #FFDA00; letter-spacing: 0px;">
                                 Bold Ideas • Smart Execution • Real Impact 
                              </div>
+                             <!-- LAYER NR. 3 - ICON BELOW TEXT -->
+                            <div class="tp-caption" 
+                                id="slide-25-layer-4" 
+                                data-x="['center','center','center','center']" 
+                                data-hoffset="['0','0','0','0']" 
+                                data-y="['middle','middle','middle','middle']" 
+                                data-voffset="['160','160','60','50']" 
+                                data-width="['auto','auto','auto','auto']"
+                                data-height="['auto','auto','auto','auto']"
+                                data-type="image"
+                                data-responsive_offset="off"
+                                data-responsive="off"
+                                data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                style="z-index: 8;">
+                                
+                                <img src="{{ asset('favicon/favicon.ico') }}" alt="icon" style="width: 40px; height: 40px;">
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
                         </li>
                         <!-- SLIDE  -->
 
@@ -85,6 +104,24 @@
                                 style="z-index: 7; min-width: 900px; max-width: 900px; white-space: normal; word-wrap:break-word; font-size: 36px; line-height: 51px; font-weight: 900; color: #FFDA00; letter-spacing: 0px;">
                                 Bold Ideas • Smart Execution • Real Impact 
                              </div>
+
+                              <!-- LAYER NR. 3 - ICON BELOW TEXT -->
+                            <div class="tp-caption" 
+                                id="slide-25-layer-4" 
+                                data-x="['center','center','center','center']" 
+                                data-hoffset="['0','0','0','0']" 
+                                data-y="['middle','middle','middle','middle']" 
+                                data-voffset="['160','160','60','50']" 
+                                data-width="['auto','auto','auto','auto']"
+                                data-height="['auto','auto','auto','auto']"
+                                data-type="image"
+                                data-responsive_offset="off"
+                                data-responsive="off"
+                                data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                style="z-index: 8;">
+                                
+                                <img src="{{ asset('favicon/favicon.ico') }}" alt="icon" style="width: 40px; height: 40px;">
+                            </div>
                         </li>
                         <!-- SLIDE  -->
                        
