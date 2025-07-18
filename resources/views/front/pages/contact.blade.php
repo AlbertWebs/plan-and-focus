@@ -16,16 +16,14 @@
                               <p><a href="#">(+254) 723 014 032</a></p>
                            </div>
                            <ul class="social-icon icon-size-medium text-dark text-start tooltip-layout move-up wow">
-                              <li class="facebook"><a href="#" class="link hint--bounce hint--top hint--theme"
+                              <li class="facebook"><a href="https://www.facebook.com/planandfocus/" class="link hint--bounce hint--top hint--theme"
                                  aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
-                              <li class="twitter"><a href="#" class="link hint--bounce hint--top hint--theme"
+                              <li class="twitter"><a href="https://twitter.com/PlanandFocus" class="link hint--bounce hint--top hint--theme"
                                  aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                              <li class="instagram"><a href="#" class="link hint--bounce hint--top hint--theme"
+                              <li class="instagram"><a href="https://www.instagram.com/planandfocus/" class="link hint--bounce hint--top hint--theme"
                                  aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                              <li class="dribbble"><a href="#" class="link hint--bounce hint--top hint--theme"
-                                 aria-label="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-                              <li class="pinterest"><a href="#" class="link hint--bounce hint--top hint--theme"
-                                 aria-label="Pinterest"><i class="fab fa-pinterest"></i></a></li>
+                              <li class="linkedin"><a href="https://www.linkedin.com/in/plan-and-focus-347774220/" class="link hint--bounce hint--top hint--theme"
+                                 aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
                            </ul>
                         </div>
                      </div>

@@ -14,7 +14,7 @@
                             data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                             data-param10="" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="{{asset('theme/img/revoulation/slider-home-service-slide-01-bg.jpg')}}" alt="" data-bgposition="center center"
+                            <img src="{{asset('uploads/pandf.jpeg')}}" alt="" data-bgposition="center center"
                                 data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                             <!-- LAYERS -->
 
@@ -30,7 +30,7 @@
                                 style="z-index: 5; min-width: 1100px; max-width: 1100px; white-space: normal; font-size: 90px; line-height: 127px; font-weight: 600; color: #ffffff; letter-spacing: 0px;">
                                
                               
-                                 <span class="secondary-font" style="font-weight: 700"></span> Marketing and Communications </div>
+                                <span class="secondary-font theme-color" style="font-weight: 700;"></span> Marketing and Communications </div>
 
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption  homer-service-pra" id="slide-25-layer-3" data-x="['center','center','center','center']"
@@ -55,7 +55,7 @@
                             data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                             data-param10="" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="{{asset('theme/img/revoulation/slider-home-service-slide-01-bg.jpg')}}" alt="" data-bgposition="center center"
+                            <img src="{{asset('uploads/pexels-pixabay-164829.jpg')}}" alt="" data-bgposition="center center"
                                 data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                             <!-- LAYERS -->
 

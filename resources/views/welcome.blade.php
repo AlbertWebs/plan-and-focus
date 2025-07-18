@@ -23,7 +23,7 @@
                         </div>
                      </div>
                </div>
-                <div class="row row--0 bg_color--14 align-items-center ">
+                <div class="row row--0 bg_color--14 align-items-center wow move-up animate">
                     
                    
 
