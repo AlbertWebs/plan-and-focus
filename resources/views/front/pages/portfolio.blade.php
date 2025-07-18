@@ -1,6 +1,6 @@
 <section  id="portfolio">
 <!-- Start Portfolio Area -->
-<div class="brook-portfolio-area pt--100 rslide" data-background="#ae2883" id="portfolio">
+<div class="brook-portfolio-area pt--100 pb--100 rslide" data-background="#ae2883" id="portfolio">
    <div class="bk-portfolio-area">
       <div class="container-fluid plr--100 plr_sm--30 plr_md--50">
         {{--  --}}

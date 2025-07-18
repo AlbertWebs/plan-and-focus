@@ -5,7 +5,7 @@
                 <div class="row row--0 align-items-center">
                     <div class="col-lg-12 col-xl-6">
                         <div class="bext-service thumb wow move-up">
-                            <img src="{{asset('uploads/pexels-rdne-7947646.jpg')}}" alt="images">
+                            <img src="{{asset('uploads/11.jpg')}}" alt="images">
                         </div>
                     </div>
                     <div class="col-lg-12 col-xl-6">

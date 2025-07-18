@@ -73,7 +73,7 @@
                </div>
             </div>
             <!-- End Contact Area -->
-            {{-- @include('services') --}}
+            
               <!-- Start Call To Action -->
             <div class="brook-call-to-action bg_color--44 ptb--70">
                 <div class="container">

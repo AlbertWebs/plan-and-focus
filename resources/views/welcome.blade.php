@@ -8,6 +8,7 @@
       @include('front.pages.services')
       @include('front.pages.why')  
       @include('front.pages.portfolio')
+      @include('front.pages.clients')
       @include('front.pages.counter')
       <!-- Start Blog Area -->
       {{-- @include('front.blog') --}}
