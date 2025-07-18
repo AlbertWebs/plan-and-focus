@@ -87,27 +87,24 @@
                               </nav>
                            </div>
                            <!-- Header Right -->
-                           <div class="header-right have-not-flex pl--35 pl_md--5 pr_md--20 pl_sm--5 pr_sm--20">
-                              <!-- Start Minicart -->
-                              {{-- <div class="mini-cart">
-                                 <div id="minicart-trigger" class="minicart-trigger mini-cart-button" data-count="3">
-                                    <button><i class="fas fa-shopping-bag"></i></button>
-                                 </div>
-                               
-                              </div> --}}
-                              <!-- End Minicart -->
-                              <!-- Start Popup Search Wrap -->
-                              <div class="popup-search-wrap">
-                                 <a class="btn-search-click" href="#">
-                                 <i class="fa fa-search"></i>
-                                 </a>
-                              </div>
-                              <!-- End Popup Search Wrap -->
-                              <!-- Start Hamberger -->
-                              <div class="manu-hamber popup-mobile-click d-block d-lg-none light-version d-block d-xl-none">
-                                 <div>
-                                    <i></i>
-                                 </div>
+                           <div class="header-right have-not-flex d-sm-flex pl--35 pr_md--40 pr_sm--40">
+                                    <!-- Start Social Icon -->
+                                    <ul class="social-icon icon-size-medium text-center tooltip-layout d-none d-sm-flex">
+                                        <li class="facebook"><a href="https://www.facebook.com/planandfocus/" class="link hint--bounce hint--top hint--theme"
+                                                aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                                        <li class="twitter"><a href="https://twitter.com/PlanandFocus" class="link hint--bounce hint--top hint--theme"
+                                                aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="instagram"><a href="https://www.instagram.com/planandfocus/" class="link hint--bounce hint--top hint--theme"
+                                                aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                        <li class="linkedin"><a href="https://www.linkedin.com/in/plan-and-focus-347774220/" class="link hint--bounce hint--top hint--theme"
+                                                aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                    <!-- End Social Icon -->
+                                    <!-- Start Hamberger -->
+                                    <div class="manu-hamber popup-mobile-click d-block d-lg-none light-version pl_md--20 pl_sm--20">
+                                        <div>
+                                            <i></i>
+                                        </div>
                               </div>
                               <!-- End Hamberger -->
                            </div>
@@ -130,11 +127,16 @@
                   <a class="mobile-close" href="#"></a>
                </div>
                <div class="menu-content">
-                  <ul class="menulist object-custom-menu">
+                  <ul class="menulist object-custom-menu ">
                      <li>
                         <a href="#"><span>Home</span></a>
                        
                      </li>
+                     <li class="lavel-1"><a href="#about"><span class="signifier-200-menu">About Us</span></a></li>
+                     <li class="lavel-1"><a href="#services"><span class="signifier-200-menu">Services</span></a></li>
+                     <li class="lavel-1"><a href="#why"><span class="signifier-200-menu">Why Work With Us</span></a></li>
+                     <li class="lavel-1"><a href="#portfolio"><span class="signifier-200-menu">Portfolio</span></a></li>
+                     <li class="lavel-1"><a href="#contact"><span class="signifier-200-menu">Contact</span></a></li>
                     
                   </ul>
                </div>
