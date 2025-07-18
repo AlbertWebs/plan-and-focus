@@ -9,7 +9,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-xl-6">
-                        <div class="bext-service plr--190 plr_lg--50 plr_lp--40 plr_md--50 plr_sm--30 mt_lg--40 mb_lg--40 mt_md--40 mb_md--40 mt_sm--40 mb_sm--40">
+                        <div class="bext-service plr--50 plr_lg--50 plr_lp--40 plr_md--50 plr_sm--30 mt_lg--40 mb_lg--40 mt_md--40 mb_md--40 mt_sm--40 mb_sm--40">
                             <div class="content">
                                 <div class="brook-section-title text-start">
                                     <h3 class="heading heading-h3 font-large wow move-up navy theme-heading">Why Work With Us</h3>

@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="brook-section-title mb--30 text-center">
-                    <h6 class="heading heading-h6 letter-spacing-3 signifier-200-font  wow move-up animate new-font theme-yellow"  style="font-weight:900 !important">FEATURED WORKS</h6>
+                    <h6 class="heading heading-h6 letter-spacing-3 signifier-200-font  wow move-up animate new-font theme-yellow"  style="font-weight:900 !important; border-bottom: 3px solid #009EE2; display: inline-block;">FEATURED WORKS</h6>
                     <div class="space mb--45"></div>
                     <h3 class="heading heading-h3 font-40 signifier-200 navy wow move-up animate theme-heading  w-600">Custom, Clever, and Creative<br> that Works.</h3>
                 </div>

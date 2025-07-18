@@ -7,22 +7,22 @@
                      <div class="col-xl-3 col-lg-3 col-12">
                         <div class="address-inner">
                            <div class="address wow move-up">
-                              <h3 class="heading">Visit our offices at</h3>
-                              <p>2005 Westlands Lane Apt. 896, Shop Plaza 10010, Nairobi</p>
+                              <h3 class="heading navy">Visit our offices at</h3>
+                              <p class="navy">2005 Westlands Lane Apt. 896, Shop Plaza 10010, Nairobi</p>
                            </div>
                            <div class="address mt--60 mb--60 wow move-up">
-                              <h3 class="heading">Message us</h3>
-                              <p><a href="#">info@planadnfocus.com</a></p>
-                              <p><a href="#">(+254) 723 014 032</a></p>
+                              <h3 class="heading navy">Message us</h3>
+                              <p><a class="navy" href="#">info@planadnfocus.com</a></p>
+                              <p><a class="navy" href="#">(+254) 723 014 032</a></p>
                            </div>
                            <ul class="social-icon icon-size-medium text-dark text-start tooltip-layout move-up wow">
-                              <li class="facebook"><a href="https://www.facebook.com/planandfocus/" class="link hint--bounce hint--top hint--theme"
+                              <li class="facebook"><a href="https://www.facebook.com/planandfocus/" class="link hint--bounce hint--top hint--theme navy"
                                  aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
-                              <li class="twitter"><a href="https://twitter.com/PlanandFocus" class="link hint--bounce hint--top hint--theme"
+                              <li class="twitter"><a href="https://twitter.com/PlanandFocus" class="link hint--bounce hint--top hint--theme navy"
                                  aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                              <li class="instagram"><a href="https://www.instagram.com/planandfocus/" class="link hint--bounce hint--top hint--theme"
+                              <li class="instagram"><a href="https://www.instagram.com/planandfocus/" class="link hint--bounce hint--top hint--theme navy"
                                  aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                              <li class="linkedin"><a href="https://www.linkedin.com/in/plan-and-focus-347774220/" class="link hint--bounce hint--top hint--theme"
+                              <li class="linkedin"><a href="https://www.linkedin.com/in/plan-and-focus-347774220/" class="link hint--bounce hint--top hint--theme navy"
                                  aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
                            </ul>
                         </div>
@@ -34,19 +34,19 @@
                               <div class="row">
                                  <div class="col-lg-6">
                                     <div class="input-box">
-                                       <span class="form-icon far fa-user"></span>
+                                       <span class="form-icon far fa-user navy"></span>
                                        <input type="text" placeholder="Name *">
                                     </div>
                                  </div>
                                  <div class="col-lg-6">
                                     <div class="input-box">
-                                       <span class="form-icon far fa-envelope"></span>
+                                       <span class="form-icon far fa-envelope navy"></span>
                                        <input type="text" placeholder="Email *">
                                     </div>
                                  </div>
                                  <div class="col-lg-12">
                                     <div class="input-box">
-                                       <span class="form-icon fas fa-mobile-alt"></span>
+                                       <span class="form-icon fas fa-mobile-alt navy"></span>
                                        <input type="text" placeholder="Phone number">
                                     </div>
                                  </div>
@@ -57,7 +57,7 @@
                                  </div>
                                  <div class="col-lg-12">
                                     <div class="form-action">
-                                       <div class="form-description">
+                                       <div class="form-description navy">
                                          We’re open to questions and conversations, and we’re always happy to hear from you anytime.
                                        </div>
                                        <div class="form-submit">
