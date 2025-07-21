@@ -1,4 +1,4 @@
-<section id="about">
+<section>
       <div class="brook-service-area plr--100 plr_lg--30 plr_md--50 plr_sm--30 pb--100 mt--100" >
          <div class="row">
             <div class="col-lg-12">

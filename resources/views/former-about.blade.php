@@ -1,4 +1,6 @@
-              <!-- Start About Area -->
+
+<section id="about">
+    <!-- Start About Area -->
             <div class="brook-about-area bg_image--26 ptb--100 ptb-md--100 ptb-sm--100 bg_color--10 mobile-fix-margin">
                 <div class="container">
                     <div class="row">
@@ -14,3 +16,4 @@
                 </div>
             </div>
             <!-- End About Area -->
+</section>
