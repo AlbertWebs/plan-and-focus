@@ -52863,8 +52863,8 @@ h3.heading-h3 br,
   height:100%;
 }
 .sub-image{
-    max-height:400px;
-    height:100%;
+    height:400px !important;
+    /* height:100% !important; */
     object-fit:cover;
     width:100%;
 }
