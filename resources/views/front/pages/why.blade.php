@@ -29,7 +29,7 @@
                                 </h6>
                                 <div class="box-btn wow move-up">
                                         
-                                             <a class="bk-btn theme-btn btn-xs-size" href="#">Learn More</a>
+                                             <a class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" href="#">Learn More</a>
                                     </div>
                                 <div class="bkseparator--60 bkseparator_lg--30 bkseparator_md--20 bkseparator_sm--20"></div>
                                     

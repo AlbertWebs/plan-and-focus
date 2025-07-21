@@ -61,7 +61,7 @@
                                          We’re open to questions and conversations, and we’re always happy to hear from you anytime.
                                        </div>
                                        <div class="form-submit">
-                                          <input type="submit" value="Send message">
+                                          <input class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" type="submit" value="Send message">
                                        </div>
                                     </div>
                                  </div>

@@ -7,7 +7,7 @@
                   <div class="content wow move-up">
                      <h3 class="theme-color">NUMBER SPEAKS</h3>
                      <h2 class="signifier-200-font navy theme-heading">We always ready <br> for a <span class="secondary-color"><strong>challenge.</strong></span></h2>
-                     <a class="bk-btn theme-btn" href="#">Learn More</a>
+                     <a class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" href="#">Learn More</a>
                   </div>
                </div>
             </div>

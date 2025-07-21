@@ -52854,3 +52854,7 @@ h3.heading-h3 br,
     display: block;
     margin: 0 auto;
 }
+.bg-yellow-color-navy{
+  background-color: #FFDA00 !important;
+  color: #2B3990 !important;
+}
