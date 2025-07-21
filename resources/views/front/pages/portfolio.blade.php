@@ -21,7 +21,7 @@
                      <div class="col-lg-12 col-xl-6 col-12">
                         <div class="portfolio-cation wow move-up">
                            <div class="thumb">
-                              <img style="height:800px !important; height:100%"  src="{{asset('uploads/p16 LHS.jpg')}}" alt="Portfolio Images">
+                              <img class="main-image"  src="{{asset('uploads/p16 LHS.jpg')}}" alt="Portfolio Images">
                            </div>
                            <div class="port-overlay-info">
                               <div class="hover-action">
@@ -44,7 +44,7 @@
                               <!-- Start Single Portfolio -->
                               <div class="portfolio-cation wow move-up">
                                  <div class="thumb folios">
-                                    <img style="max-height:400px; height:100%; object-fit:cover" src="{{asset('uploads/4857.avif')}}" alt="Portfolio Images">
+                                    <img class="sub-image"  src="{{asset('uploads/4857.avif')}}" alt="Portfolio Images">
                                  </div>
                                  <div class="port-overlay-info">
                                     <div class="hover-action">
@@ -65,7 +65,7 @@
                               <!-- Start Single Portfolio -->
                               <div class="portfolio-cation wow move-up">
                                  <div class="thumb folios">
-                                    <img style="height:400px !important; height:100%; object-fit:cover"  src="{{asset('uploads/fs-VTM-Machine-2018.xl.jpg')}}" alt="Portfolio Images">
+                                    <img class="sub-image" src="{{asset('uploads/fs-VTM-Machine-2018.xl.jpg')}}" alt="Portfolio Images">
                                  </div>
                                  <div class="port-overlay-info">
                                     <div class="hover-action">
@@ -86,7 +86,7 @@
                               <!-- Start Single Portfolio -->
                               <div class="portfolio-cation wow move-up">
                                  <div class="thumb">
-                                    <img style="height:400px !important; height:100%; object-fit:cover"  src="{{asset('uploads/Acer-Aspire-Lite-14-header-1024x640.png')}}" alt="Portfolio Images">
+                                    <img class="sub-image" src="{{asset('uploads/Acer-Aspire-Lite-14-header-1024x640.png')}}" alt="Portfolio Images">
                                  </div>
                                  <div class="port-overlay-info">
                                     <div class="hover-action">

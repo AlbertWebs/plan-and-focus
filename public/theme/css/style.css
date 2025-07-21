@@ -52858,3 +52858,50 @@ h3.heading-h3 br,
   background-color: #FFDA00 !important;
   color: #2B3990 !important;
 }
+.main-image{
+  height:800px !important;
+  height:100%;
+}
+.sub-image{
+    max-height:400px;
+    height:100%;
+    object-fit:cover;
+    width:100%;
+}
+
+@media (max-width: 767px) {
+  .main-image {
+    height: auto !important;
+    margin:20px;
+  }
+  .sub-image {
+    max-height: auto;
+    margin:20px;
+  }
+  .signifier-200{
+    font-size:30px !important;
+  }
+  .signifier-200-font{
+    font-size:30px !important;
+  }
+  .font-size-25em {
+    font-size: 1.0em !important;
+    line-height: 1.5em !important;  
+    margin:2px !important;
+  }
+  .ptb-sm--100 {
+    padding: 30px 0;
+  }
+  .ptb--100 {
+    padding: 30px 0;
+  }
+  .mobile-fix-margin {
+    margin: 0 !important;
+    padding-left:0px;
+  }
+
+  .about-content{
+    margin: 0 !important;
+    padding-left:0px !important;
+  }
+}
