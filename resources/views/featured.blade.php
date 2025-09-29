@@ -111,11 +111,11 @@
                                                     {{ $Portfolio->description }}
                                                 </p>
                                             </div>
+                                            <hr>
                                             <div class="content mb--65 wow move-up">
-                                                <p class="bk_pra">Marketing has always been about connecting with your
-                                                    audience in the right place and at the right time. Today, that
-                                                    means you need to meet them where they are already spending time:
-                                                    on the internet. (Source: blog.hubspot.com)</p>
+                                                <p class="bk_pra">
+                                                    Plan & Focus is your creative partner in marketing communications, delivering sharp campaigns and strategic engagement that drive results—online, on air, and on the ground. Led by experts, we combine bold ideas with smart systems to make every message count.
+                                                </p>
                                             </div>
 
                                             <div class="portfolio-btn">
