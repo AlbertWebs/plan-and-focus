@@ -92,7 +92,7 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="portfolio-left bk-portfolio-details wow move-up">
                                 <div class="portfolio-main-info">
-                                    <h2 class="heading heading-h2 line-height-1-42">{{$Portfolio->title}}</h2>
+                                    <h2 class="heading heading-h2 line-height-1-42 d-flex flex-column justify-content-center">{{$Portfolio->title}}</h2>
 
                                 </div>
                             </div>
