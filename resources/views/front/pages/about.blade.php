@@ -3,7 +3,7 @@
          <div class="row">
             <div class="col-lg-12">
                <div class="brook-section-title mb--30 text-center">
-                  <h6 class="heading heading-h6 letter-spacing-3 signifier-200-font wow move-up animate new-font theme-yellow"  
+                  <h6 class="heading heading-h6 letter-spacing-3 signifier-200-font wow move-up animate new-font theme-yellow"
                      style="font-weight:900 !important; border-bottom: 3px solid #009EE2; display: inline-block;">
                      About Us
                   </h6>
@@ -20,8 +20,8 @@
                     <img style="width: 100%;  height: 100%; object-fit: cover;" src="{{ asset('uploads/pexels-brotin-biswas-158640-518543.jpg') }}" alt="About">
                 </div>
             </div>
-            <div class="col-lg-6 ptb-md--80 ptb-sm--80" style="margin:0 auto; padding:50px">
-               <p class="p-service navy new-font"><br><br>
+            <div class="col-lg-6 ptb-md--80 ptb-sm--80 d-flex flex-column justify-content-center" style="margin:0 auto; padding:50px">
+               <p class="p-service navy new-font">
                   <strong>Plan & Focus</strong>, is not just a marketing communications agency—we are your network forward, creative partners.<br>
                   From succinct, effective <strong>brand campaigns</strong> to sharp, <strong>strategic PR</strong>
                   <strong>stakeholder engagement</strong>, we deliver <strong>integrated solutions</strong> that cut through the noise and drive results.

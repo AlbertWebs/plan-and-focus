@@ -1,3 +1,10 @@
+<?php
+   $firstPortfolio = DB::table('portfolios')->first();
+
+    // Fetch the rest (skipping the first one)
+    $otherPortfolios = DB::table('portfolios')->skip(1)->take(4)->get();
+?>
+
 <section  id="portfolio">
    <!-- Start Portfolio Area -->
    <div class="brook-portfolio-area pt--100 pb--100 rslide" data-background="#ae2883" id="portfolio">
@@ -21,16 +28,16 @@
                      <div class="col-lg-12 col-xl-6 col-12">
                         <div class="portfolio-cation wow move-up">
                            <div class="thumb">
-                              <img class="main-image"  src="{{asset('uploads/p16 LHS.jpg')}}" alt="Portfolio Images">
+                              <img class="main-image small-margin"  src="{{url('/')}}/uploads/{{ $firstPortfolio->image }}" alt="Portfolio Images">
                            </div>
                            <div class="port-overlay-info">
                               <div class="hover-action">
                                  <h3 class="post-overlay-title">
-                                    <a href="#">Megapipes Solutions Limited</a>
+                                    <a href="#">{{ $firstPortfolio->title }}</a>
                                  </h3>
                                  {{-- <div class="category">Digital & PR &nbsp; </div> --}}
                                  <div class="box-btn">
-                                    <a class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" href="#">Learn
+                                    <a class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" href="{{url('/')}}/featured-companies/{{ $firstPortfolio->slung }}">Learn
                                     More</a>
                                  </div>
                               </div>
@@ -40,20 +47,21 @@
                      <!-- End Single Portfolio -->
                      <div class="col-lg-12 col-xl-6 col-12">
                         <div class="row row--0">
-                           <div class="col-lg-12">
+                           @foreach($otherPortfolios as $others)
+                            <div class="col-lg-6">
                               <!-- Start Single Portfolio -->
                               <div class="portfolio-cation wow move-up">
                                  <div class="thumb folios">
-                                    <img class="sub-image"  src="{{asset('uploads/4857.avif')}}" alt="Portfolio Images">
+                                    <img class="sub-image small-margin"  src="{{url('/')}}/uploads/{{ $others->image }}" alt="{{$others->title}}s">
                                  </div>
                                  <div class="port-overlay-info">
                                     <div class="hover-action">
-                                       <h3 class="post-overlay-title"><a href="#">Vodafone</a></h3>
-                                       {{-- 
+                                       <h3 class="post-overlay-title"><a href="#">{{$others->title}}</a></h3>
+                                       {{--
                                        <div class="category">Digital</div>
                                        --}}
                                        <div class="box-btn">
-                                          <a class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" href="#">Learn
+                                          <a class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" href="{{url('/')}}/featured-companies/{{ $others->slung }}">Learn
                                           More</a>
                                        </div>
                                     </div>
@@ -61,48 +69,7 @@
                               </div>
                               <!-- End Single Portfolio -->
                            </div>
-                           <div class="col-lg-6">
-                              <!-- Start Single Portfolio -->
-                              <div class="portfolio-cation wow move-up">
-                                 <div class="thumb folios">
-                                    <img class="sub-image" src="{{asset('uploads/fs-VTM-Machine-2018.xl.jpg')}}" alt="Portfolio Images">
-                                 </div>
-                                 <div class="port-overlay-info">
-                                    <div class="hover-action">
-                                       <h3 class="post-overlay-title"><a href="#">Vendibit</a></h3>
-                                       {{-- 
-                                       <div class="category">Digital</div>
-                                       --}}
-                                       <div class="box-btn">
-                                          <a class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" href="#">Learn
-                                          More</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- End Single Portfolio -->
-                           </div>
-                           <div class="col-lg-6">
-                              <!-- Start Single Portfolio -->
-                              <div class="portfolio-cation wow move-up">
-                                 <div class="thumb">
-                                    <img class="sub-image" src="{{asset('uploads/Acer-Aspire-Lite-14-header-1024x640.png')}}" alt="Portfolio Images">
-                                 </div>
-                                 <div class="port-overlay-info">
-                                    <div class="hover-action">
-                                       <h3 class="post-overlay-title"><a href="#">Acer Africa</a></h3>
-                                       {{-- 
-                                       <div class="category">Digital</div>
-                                       --}}
-                                       <div class="box-btn">
-                                          <a class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" href="#">Learn
-                                          More</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- End Single Portfolio -->
-                           </div>
+                           @endforeach
                         </div>
                      </div>
                   </div>
