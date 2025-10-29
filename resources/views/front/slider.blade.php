@@ -1,4 +1,44 @@
 <section id="home">
+<style>
+/* Responsive typography tweaks for hero */
+.homer-service-heading { text-shadow: 0 2px 8px rgba(0,0,0,0.35); }
+.homer-service-pra { text-shadow: 0 2px 6px rgba(0,0,0,0.25); }
+@media (max-width: 992px) {
+    .homer-service-heading { font-size: 48px !important; line-height: 1.2 !important; }
+    .homer-service-pra { font-size: 20px !important; line-height: 1.4 !important; }
+}
+@media (max-width: 576px) {
+    .homer-service-heading { font-size: 30px !important; line-height: 1.2 !important; }
+    .homer-service-pra { font-size: 14px !important; line-height: 1.35 !important; }
+}
+
+/* Landscape-like slider cap on mobile */
+@media (max-width: 768px) {
+    #rev_slider_15_1_wrapper,
+    #rev_slider_15_1,
+    .fullwidthabanner,
+    .rev_slider_wrapper {
+        height: 45vh !important;
+        max-height: 45vh !important;
+        overflow: hidden;
+    }
+    #rev_slider_15_1 .rev-slidebg {
+        height: 45vh !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
+    /* Hide slider navigation on mobile */
+    .tparrows,
+    .tp-bullets { display: none !important; }
+    /* Tighten caption spacing on small screens */
+    .homer-service-heading { letter-spacing: 0 !important; }
+    .homer-service-pra { margin-top: 8px !important; }
+}
+@media (max-width: 576px) {
+    .homer-service-heading { line-height: 1.15 !important; }
+    .homer-service-pra { line-height: 1.3 !important; }
+}
+</style>
 <!-- START REVOLUTION SLIDER -->
         <div class="slider-revoluation" id="home">
             <div id="rev_slider_15_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="home-service"
@@ -21,7 +61,7 @@
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption  homer-service-heading" id="slide-25-layer-1" data-x="['center','center','center','center']"
                                 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['-55','0','-150','-150']" data-fontsize="['70','55','40','25']"
+                                data-voffset="['-55','0','-20','-10']" data-fontsize="['70','55','40','25']"
                                 data-lineheight="['70','107','86','64']" data-width="['1100','900','670','360']"
                                 data-height="none" data-whitespace="normal" data-type="text" data-basealign="slide"
                                 data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":350,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfromtop","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -35,7 +75,7 @@
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption  homer-service-pra" id="slide-25-layer-3" data-x="['center','center','center','center']"
                                 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['64','64','0','20']" data-fontsize="['36','20','14','10']"
+                                data-voffset="['64','64','20','25']" data-fontsize="['36','20','14','10']"
                                 data-lineheight="['51','43','34','29']" data-width="['800','800','600','360']"
                                 data-height="['none','none','none','35']" data-whitespace="normal" data-type="text"
                                 data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":1000,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -45,22 +85,7 @@
                                 Bold Ideas • Smart Execution • Real Impact
                              </div>
                              <!-- LAYER NR. 3 - ICON BELOW TEXT -->
-                            <div class="tp-caption"
-                                id="slide-25-layer-4"
-                                data-x="['center','center','center','center']"
-                                data-hoffset="['0','0','0','0']"
-                                data-y="['middle','middle','middle','middle']"
-                                data-voffset="['160','160','60','50']"
-                                data-width="['auto','auto','auto','auto']"
-                                data-height="['auto','auto','auto','auto']"
-                                data-type="image"
-                                data-responsive_offset="off"
-                                data-responsive="off"
-                                data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                style="z-index: 8;">
-
-                                <img src="{{ asset('favicon/favicon.ico') }}" alt="icon" style="width: 40px; height: 40px;">
-                            </div>
+                            
 
                             <!-- LAYER NR. 4 -->
                         </li>
@@ -81,7 +106,7 @@
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption  homer-service-heading" id="slide-25-layer-1" data-x="['center','center','center','center']"
                                 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['-55','0','-150','-150']" data-fontsize="['70','55','40','25']"
+                                data-voffset="['-55','0','-20','-10']" data-fontsize="['70','55','40','25']"
                                 data-lineheight="['70','107','86','64']" data-width="['1100','900','670','360']"
                                 data-height="none" data-whitespace="normal" data-type="text" data-basealign="slide"
                                 data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":350,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfromtop","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -95,7 +120,7 @@
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption  homer-service-pra" id="slide-25-layer-3" data-x="['center','center','center','center']"
                                 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['64','64','0','20']" data-fontsize="['36','20','14','10']"
+                                data-voffset="['64','64','20','25']" data-fontsize="['36','20','14','10']"
                                 data-lineheight="['51','43','34','29']" data-width="['800','800','600','360']"
                                 data-height="['none','none','none','35']" data-whitespace="normal" data-type="text"
                                 data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":1000,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -105,23 +130,7 @@
                                 Bold Ideas • Smart Execution • Real Impact
                              </div>
 
-                              <!-- LAYER NR. 3 - ICON BELOW TEXT -->
-                            <div class="tp-caption"
-                                id="slide-25-layer-4"
-                                data-x="['center','center','center','center']"
-                                data-hoffset="['0','0','0','0']"
-                                data-y="['middle','middle','middle','middle']"
-                                data-voffset="['160','160','60','50']"
-                                data-width="['auto','auto','auto','auto']"
-                                data-height="['auto','auto','auto','auto']"
-                                data-type="image"
-                                data-responsive_offset="off"
-                                data-responsive="off"
-                                data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                style="z-index: 8;">
-
-                                <img src="{{ asset('favicon/favicon.ico') }}" alt="icon" style="width: 40px; height: 40px;">
-                            </div>
+                            
                         </li>
                         <!-- SLIDE  -->
 

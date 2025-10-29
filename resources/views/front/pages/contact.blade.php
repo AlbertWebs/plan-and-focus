@@ -8,21 +8,21 @@
                         <div class="address-inner">
                            <div class="address wow move-up">
                               <h3 class="heading navy">Visit our offices at</h3>
-                              <p class="navy">2005 Westlands Lane Apt. 896, Shop Plaza 10010, Nairobi</p>
+                              <p class="navy">The Promenade I 3rd Floor I General Mathenge Road, P.O BOX 9430-00200 I Nairobi, Kenya</p>
                            </div>
                            <div class="address mt--60 mb--60 wow move-up">
                               <h3 class="heading navy">Message us</h3>
-                              <p><a class="navy" href="#">info@planadnfocus.com</a></p>
-                              <p><a class="navy" href="#">(+254) 723 014 032</a></p>
+                              <p><a class="navy" href="mailto:connect@planandfocus.com">connect@planandfocus.com</a></p>
+                              <p><a class="navy" href="tel:+254711469755">+254 711 469 755 </a></p>
                            </div>
                            <ul class="social-icon icon-size-medium text-dark text-start tooltip-layout move-up wow">
-                              <li class="facebook"><a href="https://www.facebook.com/planandfocus/" class="link hint--bounce hint--top hint--theme navy"
+                              <li class="facebook"><a href="https://www.facebook.com/planandfocus/" target="_blank" rel="noopener" class="link hint--bounce hint--top hint--theme navy"
                                  aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
-                              <li class="twitter"><a href="https://twitter.com/PlanandFocus" class="link hint--bounce hint--top hint--theme navy"
+                              <li class="twitter"><a href="https://x.com/PlanandFocus" target="_blank" rel="noopener" class="link hint--bounce hint--top hint--theme navy"
                                  aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                              <li class="instagram"><a href="https://www.instagram.com/planandfocus/" class="link hint--bounce hint--top hint--theme navy"
+                              <li class="instagram"><a href="https://www.instagram.com/planandfocus/" target="_blank" rel="noopener" class="link hint--bounce hint--top hint--theme navy"
                                  aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                              <li class="linkedin"><a href="https://www.linkedin.com/in/plan-and-focus-347774220/" class="link hint--bounce hint--top hint--theme navy"
+                              <li class="linkedin"><a href="https://www.linkedin.com/in/plan-and-focus-347774220/" target="_blank" rel="noopener" class="link hint--bounce hint--top hint--theme navy"
                                  aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
                            </ul>
                         </div>
@@ -35,24 +35,24 @@
                                  <div class="col-lg-6">
                                     <div class="input-box">
                                        <span class="form-icon far fa-user navy"></span>
-                                       <input  type="text" placeholder="Name *">
+                                       <input  type="text" placeholder="Name *" aria-label="Name" autocomplete="name">
                                     </div>
                                  </div>
                                  <div class="col-lg-6">
                                     <div class="input-box">
                                        <span class="form-icon far fa-envelope navy"></span>
-                                       <input type="text" placeholder="Email *">
+                                       <input type="email" placeholder="Email *" aria-label="Email" autocomplete="email">
                                     </div>
                                  </div>
                                  <div class="col-lg-12">
                                     <div class="input-box">
                                        <span class="form-icon fas fa-mobile-alt navy"></span>
-                                       <input type="text" placeholder="Phone number">
+                                       <input type="tel" placeholder="Phone number" aria-label="Phone number" autocomplete="tel" inputmode="tel">
                                     </div>
                                  </div>
                                  <div class="col-lg-12">
                                     <div class="input-box">
-                                       <textarea placeholder="Your message"></textarea>
+                                       <textarea placeholder="Your message" aria-label="Your message"></textarea>
                                     </div>
                                  </div>
                                  <div class="col-lg-12">

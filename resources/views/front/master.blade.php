@@ -33,6 +33,18 @@
       <link rel="stylesheet" href="{{asset('theme/css/style.css')}}">
       <!-- Custom Styles -->
       <link rel="stylesheet" href="{{asset('theme/css/custom.css')}}">
+      <style>
+         /* Hide navigation elements on small screens */
+         @media (max-width: 768px) {
+            .popup-mobile-manu { display: none !important; }
+            .manu-hamber { display: none !important; }
+            .header-right { display: none !important; }
+         }
+         /* Hide slider navigation on mobile for a cleaner hero */
+         @media (max-width: 768px) {
+            .tparrows, .tp-bullets { display: none !important; }
+         }
+      </style>
       <!-- Font Awesome CDN -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-y1N8lZy+Xz+O7zlmS6XK1rBnX0V8ZsYF1Q1D4JEVVTVS4bPln2Xe5AxDprmJGcOrXL1KXrg+JY7rV+vHpXW1/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
