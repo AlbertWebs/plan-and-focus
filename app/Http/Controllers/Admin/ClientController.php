@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ClientController extends Controller
 {
@@ -32,13 +33,28 @@ class ClientController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'logo' => 'required|string|max:255',
+            'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp,svg|max:2048',
+            'logo_path' => 'nullable|string|max:255',
             'url' => 'nullable|url|max:255',
             'order' => 'nullable|integer|min:0',
             'is_active' => 'boolean',
         ]);
 
         $validated['is_active'] = $request->has('is_active');
+
+        // Handle file upload
+        if ($request->hasFile('logo')) {
+            $logo = $request->file('logo');
+            $filename = time() . '_' . Str::slug($validated['name']) . '.' . $logo->getClientOriginalExtension();
+            $logo->move(public_path('uploads/clients'), $filename);
+            $validated['logo'] = $filename;
+        } elseif ($request->filled('logo_path')) {
+            $validated['logo'] = $request->logo_path;
+        } else {
+            return back()->withErrors(['logo' => 'Please upload a logo or provide a logo path.'])->withInput();
+        }
+
+        unset($validated['logo_path']);
 
         Client::create($validated);
 
@@ -69,13 +85,36 @@ class ClientController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'logo' => 'required|string|max:255',
+            'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp,svg|max:2048',
+            'logo_path' => 'nullable|string|max:255',
             'url' => 'nullable|url|max:255',
             'order' => 'nullable|integer|min:0',
             'is_active' => 'boolean',
         ]);
 
         $validated['is_active'] = $request->has('is_active');
+
+        // Handle file upload
+        $logoType = $request->input('logo_type', 'keep');
+        
+        if ($logoType === 'upload' && $request->hasFile('logo')) {
+            // Delete old logo if exists
+            if ($client->logo && file_exists(public_path('uploads/clients/' . $client->logo))) {
+                @unlink(public_path('uploads/clients/' . $client->logo));
+            }
+            
+            $logo = $request->file('logo');
+            $filename = time() . '_' . Str::slug($validated['name']) . '.' . $logo->getClientOriginalExtension();
+            $logo->move(public_path('uploads/clients'), $filename);
+            $validated['logo'] = $filename;
+        } elseif ($logoType === 'path' && $request->filled('logo_path')) {
+            $validated['logo'] = $request->logo_path;
+        } else {
+            // Keep existing logo
+            $validated['logo'] = $client->logo;
+        }
+
+        unset($validated['logo_path']);
 
         $client->update($validated);
 

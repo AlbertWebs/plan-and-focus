@@ -57,7 +57,8 @@
                                             <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/3.jpg')}}" alt="Client logo"></a> </div>
                                             <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/4.jpg')}}" alt="Client logo"></a> </div>
                                             <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/5.jpg')}}" alt="Client logo"></a> </div>
-                                            <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/6.jpg')}}" alt="Client logo"></a> </div>
+                                            <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/6.png')}}" alt="Client logo"></a> </div>
+                                            <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/Logo.jpg')}}" alt="Client logo"></a> </div>
                                         @endforelse
 
                                     </div>

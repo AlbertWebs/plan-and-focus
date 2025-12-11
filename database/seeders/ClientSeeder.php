@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Client;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class ClientSeeder extends Seeder
 {
@@ -13,30 +15,101 @@ class ClientSeeder extends Seeder
      */
     public function run(): void
     {
-        $clients = [
-            ['name' => 'Client 1', 'logo' => '1.jpg', 'order' => 1],
-            ['name' => 'Client 2', 'logo' => '2.jpg', 'order' => 2],
-            ['name' => 'Client 3', 'logo' => '3.jpg', 'order' => 3],
-            ['name' => 'Client 4', 'logo' => '4.jpg', 'order' => 4],
-            ['name' => 'Client 5', 'logo' => '5.jpg', 'order' => 5],
-            ['name' => 'Client 6', 'logo' => '6.jpg', 'order' => 6],
-            ['name' => 'Client 7', 'logo' => '7.jpg', 'order' => 7],
-            ['name' => 'Client 8', 'logo' => '8.jpg', 'order' => 8],
-            ['name' => 'Client 9', 'logo' => '9.jpg', 'order' => 9],
-            ['name' => 'Schneider Electric', 'logo' => 'Schneider-Electric-Logo.png', 'order' => 10],
-            ['name' => 'Client 11', 'logo' => '11.jpg', 'order' => 11],
-            ['name' => 'PBC', 'logo' => 'PBC-logo.png', 'order' => 12],
-            ['name' => 'Diamond Trust Bank', 'logo' => 'diamond-trust-bank-dtb-logo.png', 'order' => 13],
+        $clientsPath = public_path('uploads/clients');
+        
+        if (!File::exists($clientsPath)) {
+            $this->command->warn("Clients directory does not exist: {$clientsPath}");
+            return;
+        }
+
+        // Known client name mappings for better naming
+        $knownNames = [
+            'schneider-electric-logo' => 'Schneider Electric',
+            'schneider-electric' => 'Schneider Electric',
+            'pbc-logo' => 'PBC',
+            'pbc' => 'PBC',
+            'diamond-trust-bank-dtb-logo' => 'Diamond Trust Bank',
+            'diamond-trust-bank' => 'Diamond Trust Bank',
+            'dtb' => 'Diamond Trust Bank',
+            'asahi-development-transparent' => 'Asahi Development',
+            'asahi-development' => 'Asahi Development',
+            'asahi-development-transparent' => 'Asahi Development',
+            'logo' => 'Client',
         ];
 
-        foreach ($clients as $client) {
-            Client::create([
-                'name' => $client['name'],
-                'logo' => $client['logo'],
-                'url' => null,
-                'order' => $client['order'],
-                'is_active' => true,
-            ]);
+        // Get all image files from the directory
+        $files = File::files($clientsPath);
+        $imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'];
+        
+        $order = 1;
+        foreach ($files as $file) {
+            $filename = $file->getFilename();
+            $extension = strtolower($file->getExtension());
+            
+            // Skip if not an image file
+            if (!in_array($extension, $imageExtensions)) {
+                continue;
+            }
+
+            // Generate client name from filename
+            $nameWithoutExt = pathinfo($filename, PATHINFO_FILENAME);
+            // Normalize the name key (remove spaces, convert to lowercase, replace underscores/hyphens)
+            $nameKey = strtolower(preg_replace('/[^a-z0-9]+/', '-', trim($nameWithoutExt)));
+            $nameKey = trim($nameKey, '-');
+            
+            // Check for exact match first, then try partial matches
+            $clientName = null;
+            if (isset($knownNames[$nameKey])) {
+                $clientName = $knownNames[$nameKey];
+            } else {
+                // Try partial matches (e.g., "pbc-logo" should match "pbc")
+                foreach ($knownNames as $key => $name) {
+                    if (strpos($nameKey, $key) === 0 || strpos($nameKey, $key) !== false) {
+                        $clientName = $name;
+                        break;
+                    }
+                }
+            }
+            
+            // If no known name found, generate from filename
+            if (!$clientName) {
+                // Convert filename to readable name
+                $clientName = str_replace(['-', '_'], ' ', $nameWithoutExt);
+                // Remove common suffixes
+                $clientName = preg_replace('/\s+(logo|transparent|png|jpg|jpeg|svg)$/i', '', $clientName);
+                $clientName = trim($clientName);
+                
+                // Clean up multiple spaces and trailing dashes/spaces
+                $clientName = preg_replace('/\s+/', ' ', $clientName);
+                $clientName = trim($clientName, '- ');
+                
+                // Capitalize properly
+                $clientName = ucwords(strtolower($clientName));
+                
+                // If name is empty or just numbers, use generic name
+                if (empty($clientName) || is_numeric($clientName)) {
+                    $clientName = "Client {$nameWithoutExt}";
+                }
+            }
+
+            // Check if client already exists
+            $existingClient = Client::where('logo', $filename)->first();
+            
+            if (!$existingClient) {
+                Client::create([
+                    'name' => $clientName,
+                    'logo' => $filename,
+                    'url' => null,
+                    'order' => $order++,
+                    'is_active' => true,
+                ]);
+                
+                $this->command->info("Created client: {$clientName} ({$filename})");
+            } else {
+                $this->command->line("Client already exists: {$clientName} ({$filename})");
+            }
         }
+
+        $this->command->info("Client seeding completed!");
     }
 }

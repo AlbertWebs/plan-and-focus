@@ -33,10 +33,28 @@ class PortfolioController extends Controller
         $validated = $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'image' => 'nullable|string|max:255',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
+            'image_path' => 'nullable|string|max:255',
         ]);
 
         $validated['slung'] = Str::slug($validated['title']);
+
+        // Handle file upload
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $filename = time() . '_' . Str::slug($validated['title']) . '.' . $image->getClientOriginalExtension();
+            $image->move(public_path('uploads'), $filename);
+            $validated['image'] = $filename;
+        } elseif ($request->filled('image_path')) {
+            $validated['image'] = $request->image_path;
+        } else {
+            $validated['image'] = null;
+        }
+        
+        // Remove image_path from validated data
+        unset($validated['image_path']);
+
+        unset($validated['image_path']);
         
         Portfolio::create($validated);
 
@@ -68,10 +86,33 @@ class PortfolioController extends Controller
         $validated = $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'image' => 'nullable|string|max:255',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
+            'image_path' => 'nullable|string|max:255',
         ]);
 
         $validated['slung'] = Str::slug($validated['title']);
+
+        // Handle file upload
+        $imageType = $request->input('image_type', 'keep');
+        
+        if ($imageType === 'upload' && $request->hasFile('image')) {
+            // Delete old image if exists
+            if ($portfolio->image && file_exists(public_path('uploads/' . $portfolio->image))) {
+                @unlink(public_path('uploads/' . $portfolio->image));
+            }
+            
+            $image = $request->file('image');
+            $filename = time() . '_' . Str::slug($validated['title']) . '.' . $image->getClientOriginalExtension();
+            $image->move(public_path('uploads'), $filename);
+            $validated['image'] = $filename;
+        } elseif ($imageType === 'path' && $request->filled('image_path')) {
+            $validated['image'] = $request->image_path;
+        } else {
+            // Keep existing image
+            $validated['image'] = $portfolio->image;
+        }
+
+        unset($validated['image_path']);
         
         $portfolio->update($validated);
 
