@@ -34,32 +34,31 @@
                                             {"breakpoint":481, "settings": {"slidesToShow": 2}}
                                         ]'>
 
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/1.jpg')}}"
-                                                    alt="Client logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/2.jpg')}}"
-                                                    alt="Client logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/3.jpg')}}"
-                                                    alt="Client logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/4.jpg')}}"
-                                                    alt="Client logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/5.jpg')}}"
-                                                    alt="Client logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/6.jpg')}}"
-                                                    alt="Client logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/7.jpg')}}"
-                                                    alt="Client logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/8.jpg')}}"
-                                                    alt="Client logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/9.jpg')}}"
-                                                    alt="Client logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/Schneider-Electric-Logo.png')}}"
-                                                    alt="Schneider Electric logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/11.jpg')}}"
-                                                    alt="Client logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/PBC-logo.png')}}"
-                                                    alt="PBC logo"></a> </div>
-                                        <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/diamond-trust-bank-dtb-logo.png')}}"
-                                                    alt="Diamond Trust Bank logo"></a> </div> 
+                                        @php
+                                            $clients = \App\Models\Client::active()->ordered()->get();
+                                        @endphp
+
+                                        @forelse($clients as $client)
+                                            <div class="brand brand-client">
+                                                @if($client->url)
+                                                    <a href="{{ $client->url }}" target="_blank" rel="noopener noreferrer">
+                                                        <img loading="lazy" src="{{ asset('uploads/clients/' . $client->logo) }}" alt="{{ $client->name }}">
+                                                    </a>
+                                                @else
+                                                    <a href="#">
+                                                        <img loading="lazy" src="{{ asset('uploads/clients/' . $client->logo) }}" alt="{{ $client->name }}">
+                                                    </a>
+                                                @endif
+                                            </div>
+                                        @empty
+                                            {{-- Fallback to hardcoded clients if database is empty --}}
+                                            <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/1.jpg')}}" alt="Client logo"></a> </div>
+                                            <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/2.jpg')}}" alt="Client logo"></a> </div>
+                                            <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/3.jpg')}}" alt="Client logo"></a> </div>
+                                            <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/4.jpg')}}" alt="Client logo"></a> </div>
+                                            <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/5.jpg')}}" alt="Client logo"></a> </div>
+                                            <div class="brand brand-client"><a href="#"><img loading="lazy" src="{{asset('uploads/clients/6.jpg')}}" alt="Client logo"></a> </div>
+                                        @endforelse
 
                                     </div>
                                 </div>

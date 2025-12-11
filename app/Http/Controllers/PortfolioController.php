@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
-use App\Http\Requests\StorePortfolioRequest;
-use App\Http\Requests\UpdatePortfolioRequest;
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class PortfolioController extends Controller
 {
@@ -13,7 +13,8 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        //
+        $portfolios = Portfolio::latest()->paginate(10);
+        return view('admin.portfolios.index', compact('portfolios'));
     }
 
     /**
@@ -21,15 +22,26 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.portfolios.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePortfolioRequest $request)
+    public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'nullable|string',
+            'image' => 'nullable|string|max:255',
+        ]);
+
+        $validated['slung'] = Str::slug($validated['title']);
+        
+        Portfolio::create($validated);
+
+        return redirect()->route('admin.portfolios.index')
+            ->with('success', 'Portfolio created successfully!');
     }
 
     /**
@@ -37,7 +49,7 @@ class PortfolioController extends Controller
      */
     public function show(Portfolio $portfolio)
     {
-        //
+        return view('admin.portfolios.show', compact('portfolio'));
     }
 
     /**
@@ -45,15 +57,26 @@ class PortfolioController extends Controller
      */
     public function edit(Portfolio $portfolio)
     {
-        //
+        return view('admin.portfolios.edit', compact('portfolio'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePortfolioRequest $request, Portfolio $portfolio)
+    public function update(Request $request, Portfolio $portfolio)
     {
-        //
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'nullable|string',
+            'image' => 'nullable|string|max:255',
+        ]);
+
+        $validated['slung'] = Str::slug($validated['title']);
+        
+        $portfolio->update($validated);
+
+        return redirect()->route('admin.portfolios.index')
+            ->with('success', 'Portfolio updated successfully!');
     }
 
     /**
@@ -61,6 +84,9 @@ class PortfolioController extends Controller
      */
     public function destroy(Portfolio $portfolio)
     {
-        //
+        $portfolio->delete();
+
+        return redirect()->route('admin.portfolios.index')
+            ->with('success', 'Portfolio deleted successfully!');
     }
 }

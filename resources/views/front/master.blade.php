@@ -191,7 +191,7 @@
                         <ul class="bk-copyright-menu d-flex justify-content-center justify-content-md-start bk-hover">
                            <li><a href="#">Terms and Conditions</a></li>
                            <li><a href="#">Privacy Policy</a></li>
-                           <li><a href="#">Copyrigh Statement</a></li>
+                           <li><a href="#">Copyright Statement</a></li>
                         </ul>
                      </div>
                   </div>

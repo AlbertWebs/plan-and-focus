@@ -15,22 +15,22 @@
                <div class="speakers-number-wrap">
                   <!-- Start Single Count -->
                   <div class="number-wrap wow move-up">
-                     <span class="count theme-color">1035</span>
+                     <span class="count theme-color">311</span>
                      <div class="content">
                         <h6>Completed Projects</h6>
                         <p>
-                           Since its establishment in 2000, Plan and Focus has been focusing on project management & implementation through cooperation. Since 2015, the company has successfully completed over 1,000 campaigns.
+                        Plan and Focus, founded in 2000, specializes in the ideation, project management and implementation of strategic and marketing communications four our clients. So far, the company has successfully completed more than 300 projects.
                         </p>
                      </div>
                   </div>
                   <!-- End Single Count -->
                   <!-- Start Single Count -->
                   <div class="number-wrap mt--70 wow move-up">
-                     <span class="count theme-color">234</span>
+                     <span class="count theme-color">127</span>
                      <div class="content">
                         <h6>Visual campaign designs</h6>
                         <p>
-                           In total, Plan and Focus has run over 200 visual campaigns, including billboards and other outdoor media. These campaigns reflect the company's expertise in creating impactful and strategically placed visual content that resonates with target audiences.
+                        Plan and Focus has also executed over 100 visual campaigns across billboards and other outdoor media, demonstrating expertise in strategically placed, impactful content
                         </p>
                      </div>
                   </div>
