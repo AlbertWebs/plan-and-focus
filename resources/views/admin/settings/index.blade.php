@@ -75,7 +75,7 @@
                                         name="settings[{{ $setting->key }}]" 
                                         id="settings[{{ $setting->key }}]"
                                         rows="4"
-                                        class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm transition-colors @error("settings.{$setting->key}") border-red-500 @enderror"
+                                        class="block w-full px-4 py-3 rounded-xl border-2 border-gray-200 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 sm:text-sm transition-all duration-200 hover:border-gray-300 @error("settings.{$setting->key}") border-red-400 focus:border-red-500 focus:ring-red-500/20 @enderror"
                                         placeholder="Enter {{ str_replace('_', ' ', $setting->key) }}">{{ old("settings.{$setting->key}", $setting->value) }}</textarea>
                                 @else
                                     <div class="relative">
@@ -85,15 +85,15 @@
                                             id="settings[{{ $setting->key }}]"
                                             value="{{ old("settings.{$setting->key}", $setting->value) }}"
                                             placeholder="Enter {{ str_replace('_', ' ', $setting->key) }}"
-                                            class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm transition-colors @error("settings.{$setting->key}") border-red-500 @enderror">
+                                            class="block w-full px-4 py-3 pr-12 rounded-xl border-2 border-gray-200 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 sm:text-sm transition-all duration-200 hover:border-gray-300 @error("settings.{$setting->key}") border-red-400 focus:border-red-500 focus:ring-red-500/20 @enderror">
                                         @if($setting->type === 'email' && $setting->value)
-                                            <a href="mailto:{{ $setting->value }}" target="_blank" class="absolute right-3 top-1/2 -translate-y-1/2 text-indigo-600 hover:text-indigo-800">
+                                            <a href="mailto:{{ $setting->value }}" target="_blank" class="absolute right-3 top-1/2 -translate-y-1/2 text-indigo-600 hover:text-indigo-800 transition-colors p-1 rounded-md hover:bg-indigo-50">
                                                 <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                                 </svg>
                                             </a>
                                         @elseif($setting->type === 'url' && $setting->value)
-                                            <a href="{{ $setting->value }}" target="_blank" class="absolute right-3 top-1/2 -translate-y-1/2 text-indigo-600 hover:text-indigo-800">
+                                            <a href="{{ $setting->value }}" target="_blank" class="absolute right-3 top-1/2 -translate-y-1/2 text-indigo-600 hover:text-indigo-800 transition-colors p-1 rounded-md hover:bg-indigo-50">
                                                 <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                                 </svg>
@@ -180,18 +180,18 @@
                     </label>
                     <input type="text" name="new_key" id="new_key" required
                         placeholder="contact_email"
-                        class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm transition-colors">
+                        class="block w-full px-4 py-3 rounded-xl border-2 border-gray-200 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 sm:text-sm transition-all duration-200 hover:border-gray-300">
                 </div>
                 <div>
                     <label for="new_value" class="block text-sm font-semibold text-gray-900 mb-2">Value</label>
                     <input type="text" name="new_value" id="new_value" required
                         placeholder="Enter value"
-                        class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm transition-colors">
+                        class="block w-full px-4 py-3 rounded-xl border-2 border-gray-200 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 sm:text-sm transition-all duration-200 hover:border-gray-300">
                 </div>
                 <div>
                     <label for="new_type" class="block text-sm font-semibold text-gray-900 mb-2">Type</label>
                     <select name="new_type" id="new_type"
-                        class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm transition-colors">
+                        class="block w-full px-4 py-3 rounded-xl border-2 border-gray-200 bg-white text-gray-900 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 sm:text-sm transition-all duration-200 hover:border-gray-300 cursor-pointer">
                         <option value="text">Text</option>
                         <option value="email">Email</option>
                         <option value="url">URL</option>
@@ -202,7 +202,7 @@
                 <div>
                     <label for="new_group" class="block text-sm font-semibold text-gray-900 mb-2">Group</label>
                     <select name="new_group" id="new_group"
-                        class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm transition-colors">
+                        class="block w-full px-4 py-3 rounded-xl border-2 border-gray-200 bg-white text-gray-900 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 sm:text-sm transition-all duration-200 hover:border-gray-300 cursor-pointer">
                         <option value="general">General</option>
                         <option value="contact">Contact</option>
                         <option value="social">Social Media</option>
@@ -214,7 +214,7 @@
                 <label for="new_description" class="block text-sm font-semibold text-gray-900 mb-2">Description (Optional)</label>
                 <input type="text" name="new_description" id="new_description"
                     placeholder="Brief description of this setting"
-                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm transition-colors">
+                    class="block w-full px-4 py-3 rounded-xl border-2 border-gray-200 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 sm:text-sm transition-all duration-200 hover:border-gray-300">
             </div>
             <div class="flex justify-end">
                 <button type="submit" 
