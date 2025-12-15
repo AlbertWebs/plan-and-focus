@@ -8,6 +8,11 @@ Route::get('/', function () {
 
 Route::get('/featured-companies/{slung}', [App\Http\Controllers\HomeController::class, 'featuredCompanies'])->name('front.featured-companies');
 
+// Redirect 'login' route to admin.login for Laravel's auth middleware
+Route::get('/login', function () {
+    return redirect()->route('admin.login');
+})->name('login');
+
 // Admin Authentication Routes
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('login');
