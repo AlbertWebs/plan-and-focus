@@ -69,7 +69,7 @@
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption  homer-service-heading" id="slide-25-layer-1" data-x="['center','center','center','center']"
                                 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['-55','0','-20','-10']" data-fontsize="['70','55','40','25']"
+                                data-voffset="['-38','0','-16','-8']" data-fontsize="['70','55','40','25']"
                                 data-lineheight="['70','107','86','64']" data-width="['1100','900','670','360']"
                                 data-height="none" data-whitespace="normal" data-type="text" data-basealign="slide"
                                 data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":350,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfromtop","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -83,7 +83,7 @@
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption  homer-service-pra" id="slide-25-layer-3" data-x="['center','center','center','center']"
                                 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['64','64','20','25']" data-fontsize="['36','20','14','10']"
+                                data-voffset="['8','8','10','12']" data-fontsize="['36','20','14','10']"
                                 data-lineheight="['51','43','34','29']" data-width="['800','800','600','360']"
                                 data-height="['none','none','none','35']" data-whitespace="normal" data-type="text"
                                 data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":1000,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -114,7 +114,7 @@
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption  homer-service-heading" id="slide-25-layer-1" data-x="['center','center','center','center']"
                                 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['-55','0','-20','-10']" data-fontsize="['70','55','40','25']"
+                                data-voffset="['-38','0','-16','-8']" data-fontsize="['70','55','40','25']"
                                 data-lineheight="['70','107','86','64']" data-width="['1100','900','670','360']"
                                 data-height="none" data-whitespace="normal" data-type="text" data-basealign="slide"
                                 data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":350,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfromtop","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -128,7 +128,7 @@
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption  homer-service-pra" id="slide-25-layer-3" data-x="['center','center','center','center']"
                                 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['64','64','20','25']" data-fontsize="['36','20','14','10']"
+                                data-voffset="['8','8','10','12']" data-fontsize="['36','20','14','10']"
                                 data-lineheight="['51','43','34','29']" data-width="['800','800','600','360']"
                                 data-height="['none','none','none','35']" data-whitespace="normal" data-type="text"
                                 data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":1000,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
