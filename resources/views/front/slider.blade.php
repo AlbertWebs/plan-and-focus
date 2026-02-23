@@ -1,42 +1,30 @@
 <section id="home">
 <style>
-/* Responsive typography tweaks for hero */
-.homer-service-heading { text-shadow: 0 2px 8px rgba(0,0,0,0.35); }
-.homer-service-pra { text-shadow: 0 2px 6px rgba(0,0,0,0.25); }
-@media (max-width: 992px) {
-    .homer-service-heading { font-size: 48px !important; line-height: 1.2 !important; }
-    .homer-service-pra { font-size: 20px !important; line-height: 1.4 !important; }
-}
-@media (max-width: 576px) {
-    .homer-service-heading { font-size: 30px !important; line-height: 1.2 !important; }
-    .homer-service-pra { font-size: 14px !important; line-height: 1.35 !important; }
-}
+/* Hero: text shadow only (no layout overrides that could cause white block) */
+#home .homer-service-heading { text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+#home .homer-service-pra { text-shadow: 0 2px 6px rgba(0,0,0,0.35); }
 
-/* Landscape-like slider cap on mobile */
+/* Mobile: limit hero height and hide slider nav only */
 @media (max-width: 768px) {
     #rev_slider_15_1_wrapper,
     #rev_slider_15_1,
+    section#home .rev_slider_wrapper,
+    section#home .slider-revoluation,
     .fullwidthabanner,
     .rev_slider_wrapper {
-        height: 45vh !important;
-        max-height: 45vh !important;
+        height: 50vh !important;
+        min-height: 220px !important;
+        max-height: 50vh !important;
         overflow: hidden;
     }
     #rev_slider_15_1 .rev-slidebg {
-        height: 45vh !important;
+        height: 50vh !important;
+        min-height: 220px !important;
         width: 100% !important;
         object-fit: cover;
     }
-    /* Hide slider navigation on mobile */
     .tparrows,
     .tp-bullets { display: none !important; }
-    /* Tighten caption spacing on small screens */
-    .homer-service-heading { letter-spacing: 0 !important; }
-    .homer-service-pra { margin-top: 8px !important; }
-}
-@media (max-width: 576px) {
-    .homer-service-heading { line-height: 1.15 !important; }
-    .homer-service-pra { line-height: 1.3 !important; }
 }
 </style>
 <!-- START REVOLUTION SLIDER -->

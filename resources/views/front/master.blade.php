@@ -34,15 +34,95 @@
       <!-- Custom Styles -->
       <link rel="stylesheet" href="{{asset('theme/css/custom.css')}}">
       <style>
-         /* Hide navigation elements on small screens */
-         @media (max-width: 768px) {
-            .popup-mobile-manu { display: none !important; }
-            .manu-hamber { display: none !important; }
-            .header-right { display: none !important; }
-         }
          /* Hide slider navigation on mobile for a cleaner hero */
          @media (max-width: 768px) {
             .tparrows, .tp-bullets { display: none !important; }
+         }
+         /* Mobile: space above footer so content isn't hidden behind bottom nav */
+         @media (max-width: 991px) {
+            #wrapper { padding-bottom: 72px; }
+            .page-footer { padding-bottom: env(safe-area-inset-bottom, 0); }
+         }
+         /* Mobile bottom nav - horizontal bar with 5 links */
+         .mobile-bottom-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: #1a1a2e;
+            box-shadow: 0 -2px 12px rgba(0,0,0,0.15);
+            padding: 8px 0 calc(8px + env(safe-area-inset-bottom, 0)) 0;
+         }
+         @media (max-width: 991px) {
+            .mobile-bottom-nav { display: flex; align-items: center; justify-content: space-around; }
+         }
+         .mobile-bottom-nav a {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 6px 4px;
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+            font-size: 10px;
+            transition: color 0.2s;
+         }
+         .mobile-bottom-nav a:hover,
+         .mobile-bottom-nav a.active { color: #fff; }
+         /* Landing about section: reduce top/bottom space on mobile */
+         @media (max-width: 768px) {
+            .landing-about-section { padding-top: 1.25rem !important; padding-bottom: 1.25rem !important; }
+            .landing-about-sep { height: 6px !important; }
+            .landing-about-text { font-size: 1rem !important; line-height: 1.5; margin-bottom: 0 !important; }
+         }
+         /* Remove gap between hero banner and content on mobile */
+         @media (max-width: 768px) {
+            section#home,
+            section#home .slider-revoluation,
+            section#home .rev_slider_wrapper,
+            section#home .fullwidthbanner-container,
+            section#home .rev_slider { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+            .page-content { padding-top: 0 !important; margin-top: 0 !important; }
+            section#about .landing-about-section { padding-top: 0.5rem !important; }
+         }
+         /* Mobile header: safe spacing so burger is not flush to edges */
+         @media (max-width: 991px) {
+            .br_header.header-default .container-fluid {
+               padding-left: 20px !important;
+               padding-right: 20px !important;
+            }
+            .br_header .header__wrapper {
+               align-items: center;
+               padding-top: 10px !important;
+               padding-bottom: 10px !important;
+            }
+            .br_header .manu-hamber.popup-mobile-click {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               padding: 12px !important;
+               min-width: 44px;
+               min-height: 44px;
+               box-sizing: border-box;
+            }
+         }
+         @media (max-width: 576px) {
+            .br_header.header-default .container-fluid {
+               padding-left: 16px !important;
+               padding-right: 16px !important;
+            }
+            .br_header .header__wrapper { padding-top: 8px !important; padding-bottom: 8px !important; }
+         }
+         /* Less space before "About Us" on mobile */
+         @media (max-width: 768px) {
+            .about-us-section { margin-top: 1.5rem !important; }
+         }
+         /* No extra top gap on hero when burger is visible */
+         @media (max-width: 991px) {
+            section#home { margin-top: 0 !important; }
          }
       </style>
       <!-- Font Awesome CDN -->
@@ -141,8 +221,7 @@
                <div class="menu-content">
                   <ul class="menulist object-custom-menu ">
                      <li>
-                        <a href="#"><span>Home</span></a>
-                       
+                        <a href="#home"><span>Home</span></a>
                      </li>
                      <li class="lavel-1"><a href="#about"><span class="signifier-200-menu">About Us</span></a></li>
                      <li class="lavel-1"><a href="#services"><span class="signifier-200-menu">Services</span></a></li>
@@ -155,6 +234,14 @@
             </div>
          </div>
          <!-- End Popup Menu -->
+         <!-- Mobile bottom nav (visible on tablets and below) -->
+         <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+            <a href="#home" class="mobile-nav-item" data-section="home"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="#about" class="mobile-nav-item" data-section="about"><i class="fas fa-users"></i><span>About</span></a>
+            <a href="#services" class="mobile-nav-item" data-section="services"><i class="fas fa-briefcase"></i><span>Services</span></a>
+            <a href="#portfolio" class="mobile-nav-item" data-section="portfolio"><i class="fas fa-th-large"></i><span>Portfolio</span></a>
+            <a href="#contact" class="mobile-nav-item" data-section="contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+         </nav>
          <!-- Start Brook Search Popup -->
          <div class="brook-search-popup">
             <div class="inner">
@@ -197,7 +284,7 @@
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                      <div class="copyright-right text-center text-md-end">
-                        <p>© {{date('Y')}} Plan and Focus. <a href="{{url('/')}}">All Rights Reserved.</a></p>
+                        <p>© {{date('Y')}} Plan and Focus - All Rights Reserved | Powered By <a href="https://designekta.com"> Designekta Studios </a></p>
                      </div>
                   </div>
                </div>
@@ -243,9 +330,10 @@
          const navItems = document.querySelectorAll(".mainmenu .lavel-1");
          const navLinks = document.querySelectorAll(".mainmenu .lavel-1 a");
          const sections = document.querySelectorAll("section[id]");
+         const mobileNavItems = document.querySelectorAll(".mobile-bottom-nav a");
 
          function setActiveNav() {
-            let scrollPos = window.scrollY + 200; // adjust if you have fixed/sticky header
+            let scrollPos = window.scrollY + 200;
 
             sections.forEach(section => {
             const top = section.offsetTop;
@@ -253,29 +341,32 @@
             const id = section.getAttribute("id");
 
             if (scrollPos >= top && scrollPos < top + height) {
-               // Remove "active" from all items
                navItems.forEach(item => item.classList.remove("active"));
-
-               // Add "active" to the current nav item
                const activeLink = document.querySelector(`.mainmenu .lavel-1 a[href="#${id}"]`);
-               if (activeLink) {
-                  activeLink.parentElement.classList.add("active");
-               }
+               if (activeLink) activeLink.parentElement.classList.add("active");
+
+               mobileNavItems.forEach(item => {
+                  item.classList.toggle("active", item.getAttribute("href") === "#" + id);
+               });
             }
             });
          }
 
-         // Run on scroll
          window.addEventListener("scroll", setActiveNav);
-
-         // Also run once on page load (in case user loads mid-scroll)
          setActiveNav();
 
-         // Handle click
          navLinks.forEach(link => {
             link.addEventListener("click", function () {
             navItems.forEach(item => item.classList.remove("active"));
             this.parentElement.classList.add("active");
+            });
+         });
+
+         // Mobile bottom nav: close burger menu when a link is clicked
+         mobileNavItems.forEach(link => {
+            link.addEventListener("click", function () {
+               document.body.classList.remove("popup-mobile-menu-wrapper");
+               document.documentElement.style.overflow = "";
             });
          });
       });

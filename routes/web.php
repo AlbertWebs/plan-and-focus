@@ -33,4 +33,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/settings', [App\Http\Controllers\Admin\SettingsController::class, 'index'])->name('settings.index');
         Route::put('/settings', [App\Http\Controllers\Admin\SettingsController::class, 'update'])->name('settings.update');
     });
+
+    // Maintenance mode: GET with ?token=MAINTENANCE_SECRET
+    Route::get('/maintenance/down', [App\Http\Controllers\Admin\MaintenanceController::class, 'down'])->name('maintenance.down');
+    Route::get('/maintenance/up', [App\Http\Controllers\Admin\MaintenanceController::class, 'up'])->name('maintenance.up');
 });
