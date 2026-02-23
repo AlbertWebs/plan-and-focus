@@ -4,6 +4,26 @@
 #home .homer-service-heading { text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
 #home .homer-service-pra { text-shadow: 0 2px 6px rgba(0,0,0,0.35); }
 
+/* Desktop: hero full viewport height */
+@media (min-width: 769px) {
+    section#home .slider-revoluation,
+    section#home .rev_slider_wrapper,
+    #rev_slider_15_1_wrapper,
+    #rev_slider_15_1,
+    .fullwidthabanner,
+    .rev_slider_wrapper {
+        height: 100vh !important;
+        min-height: 100vh !important;
+        max-height: 100vh !important;
+    }
+    #rev_slider_15_1 .rev-slidebg {
+        height: 100vh !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
+}
+
 /* Mobile: limit hero height and hide slider nav only */
 @media (max-width: 768px) {
     #rev_slider_15_1_wrapper,
