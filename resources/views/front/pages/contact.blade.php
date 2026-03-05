@@ -7,7 +7,7 @@
                      <div class="col-xl-3 col-lg-3 col-12">
                         <div class="address-inner">
                            <div class="address wow move-up">
-                              <h3 class="heading navy">Visit our offices at</h3>
+                              <h3 class="heading navy"> Contact Details </h3>
                               <p class="navy">The Promenade I 3rd Floor I General Mathenge Road, P.O BOX 9430-00200 I Nairobi, Kenya</p>
                            </div>
                            <div class="address mt--60 mb--60 wow move-up">

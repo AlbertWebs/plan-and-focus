@@ -7,7 +7,7 @@
                   <div class="content wow move-up">
                      <h3 class="theme-color">Numbers speak</h3>
                      <h2 class="signifier-200-font navy theme-heading">We always ready <br> for a <span class="secondary-color"><strong>challenge.</strong></span></h2>
-                     <a class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" href="#">Learn More</a>
+                     <a class="brook-btn bk-btn theme-btn btn-xs-size bg-yellow-color-navy" href="#contact">Learn More</a>
                   </div>
                </div>
             </div>
@@ -19,7 +19,7 @@
                      <div class="content">
                         <h6>Completed Projects</h6>
                         <p>
-                        Plan and Focus, founded in 2000, specializes in the ideation, project management and implementation of strategic and marketing communications four our clients. So far, the company has successfully completed more than 300 projects.
+                        Plan and Focus, founded in 2012, specializes in the ideation, project management and implementation of strategic and marketing communications four our clients. So far, the company has successfully completed more than 300 projects.
                         </p>
                      </div>
                   </div>

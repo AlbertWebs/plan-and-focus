@@ -3,7 +3,7 @@
 @section('title', 'Clients')
 
 @section('content')
-<div x-data="{ showDeleteModal: false, deleteId: null }">
+<div x-data="{ showDeleteModal: false, deleteUrl: '' }">
     <div class="flex justify-between items-center mb-6">
         <h1 class="text-2xl font-bold text-gray-900">Clients</h1>
         <a href="{{ route('admin.clients.create') }}" 
@@ -49,7 +49,9 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
                                     </svg>
                                 </a>
-                                <button @click="showDeleteModal = true; deleteId = {{ $client->id }}" 
+                                <button type="button"
+                                        data-delete-url="{{ route('admin.clients.destroy', $client) }}"
+                                        @click="showDeleteModal = true; deleteUrl = $event.currentTarget.getAttribute('data-delete-url')" 
                                     class="text-red-600 hover:text-red-900">
                                     <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
@@ -97,7 +99,7 @@
                  x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
                  x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                  class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-                <form :action="`/admin/clients/${deleteId}`" method="POST">
+                <form :action="deleteUrl" method="POST">
                     @csrf
                     @method('DELETE')
                     <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">

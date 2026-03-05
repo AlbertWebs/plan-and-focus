@@ -8,8 +8,10 @@
                                 <div class="bkseparator--10 landing-about-sep"></div>
                                  <p class="signifier-200 font-size-25em navy new-font landing-about-text">
                                     <br>
-                                     Plan & Focus is your creative partner in <strong>marketing communications, delivering sharp campaigns and strategic engagement</strong> that drive results—online, on air, and on the ground. Led by experts, we combine bold ideas with smart systems to make every message count.
-                                     <br><br>
+                                       Plan & Focus is your creative partner in 
+                                       <strong>marketing communications, delivering sharp campaigns and strategic engagement</strong> 
+                                       that drive results online, on air, and on the ground. Led by experts, we combine bold ideas with smart systems to make every message count.
+                                    <br><br>
                                  </p>
                             </div>
                         </div>

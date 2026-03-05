@@ -22,11 +22,9 @@
                            <div class="content">
                               <h4>Marketing and Communications</h4>
                               <p class="p-service">
-                                Marketing and Communications at Plan & Focus involves crafting clear, compelling messages that resonate with your audience.
-                                We develop strategies that align with your brand’s vision, ensuring consistent storytelling across all platforms—digital and print.
-                                From content creation to campaign execution, we help you connect, engage, and grow your impact.
+                                Marketing and Communications at Plan & Focus involves crafting clear, compelling messages that resonate with your audience. We develop strategies that align with your brand’s vision, ensuring consistent storytelling across all platforms digital and print. From content creation to campaign execution, we help you connect, engage, and grow your impact.
                               </p>
-                              <a class="service-btn" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
+                              <a class="service-btn" href="#contact"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
                               
                            </div>
                         </div>
@@ -46,7 +44,7 @@
                                 Our goal is to ensure your message reaches the right people, fostering credibility, influence, and meaningful connections across all key audiences.
 
                               </p>
-                              <a class="service-btn" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
+                              <a class="service-btn" href="#contact"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
                            </div>
                         </div>
                      </div>
@@ -65,7 +63,7 @@
                                 Our goal is to help your brand grow its digital presence, connect with audiences, and achieve measurable marketing results.
 
                               </p>
-                              <a class="service-btn" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
+                              <a class="service-btn" href="#contact"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
                            </div>
                         </div>
                      </div>

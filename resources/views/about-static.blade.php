@@ -10,11 +10,7 @@
                            {{--  --}}
                            <div class="about-content text-centers wow move-up">
                                 <div class="bkseparator--10"></div>
-                                 {{-- <p class="signifier-200 font-size-25em navy new-font">
-                                    Plan and Focus is a results-driven agency specializing in 
-                                    <span class="theme-color"><strong>Public Relations & Media, Digital Marketing, Project Management, and Copywriting & Content Creation.</strong></span> 
-                                    We help brands shape narratives, manage campaigns, and boost visibility with clarity and creativity.
-                                 </p> --}}
+                               
                                  <p class="signifier-200 font-size-25em navy new-font">
                                     <strong>Plan & Focus</strong>, is not just a marketing communications agency—we are your network forward, creative partners.<br>
                                     From succinct, effective <strong>brand campaigns</strong> to sharp, <strong>strategic PR</strong>

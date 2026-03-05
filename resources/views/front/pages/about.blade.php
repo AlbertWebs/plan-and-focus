@@ -21,8 +21,8 @@
                 </div>
             </div>
             <div class="col-lg-6 ptb-md--80 ptb-sm--80 d-flex flex-column justify-content-center" style="margin:0 auto; padding:50px">
-               <p class="p-service navy new-font">
-                  <strong>Plan & Focus</strong>, is not just a marketing communications agency—we are your network forward, creative partners.<br>
+               <p class="p-service navy new-font"> 
+                  <strong>Plan & Focus</strong>, is not just a marketing communications agency we are your network forward, creative partners.<br>
                   From succinct, effective <strong>brand campaigns</strong> to sharp, <strong>strategic PR</strong>
                   <strong>stakeholder engagement</strong>, we deliver <strong>integrated solutions</strong> that cut through the noise and drive results.
                   <br><br>Whether it’s on screen, online, on air, or on the ground, we bring the business conversation to life with precision and creative flair.
