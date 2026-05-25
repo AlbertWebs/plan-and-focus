@@ -85,7 +85,7 @@
                         </div>
                         <div class="col-lg-5 col-sm-5 col-12">
                             <div class="call-btn text-center text-sm-end mt_mobile--20">
-                               <a class="brook-btn bk-btn-white text-theme btn-sd-size btn-rounded buzz" href="tel:+254723014032">
+                               <a class="brook-btn bk-btn-white text-theme btn-sd-size btn-rounded buzz" href="tel:+254 711 469 755">
                                  Call Us <span class="fa fa-phone"></span>
                                  </a>
                             </div>
